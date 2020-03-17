@@ -69,9 +69,19 @@ h2{
   background-color: #F8E16B;
 }
 
+.asia a{
+  color: inherit;
+  text-decoration: none;
+}
+
 .europe{
   color: #69B42F;
   background-color: #BBE19E;
+}
+
+.europe a{
+  color: inherit;
+  text-decoration: none;
 }
 
 .oceania{
@@ -79,9 +89,19 @@ h2{
   background-color: #9ED1E1;
 }
 
+.oceania a{
+  color: inherit;
+  text-decoration: none;
+}
+
 .africa{
   color: #CC585E;
   background-color: #F4A0A5;
+}
+
+.africa a{
+  color: inherit;
+  text-decoration: none;
 }
 
 .northamerica{
@@ -89,9 +109,23 @@ h2{
   background-color: #FFCFAC;
 }
 
+.northamerica a{
+  color: inherit;
+  text-decoration: none;
+}
+
 .southamerica{
   color: #5271C1;
   background-color: #9EB1E1;
+}
+
+.southamerica a{
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  font-weight: bold;
 }
 
 @media (max-width: 1180px) {
