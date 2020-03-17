@@ -190,11 +190,20 @@ input[type="button"]{
 }
 
 @media (max-width: 1180px) {
+  h2{
+    font-size: 30px;
+    color: #F2994A;
+  }
+
   .nav{
-    margin: 0px;
+    margin: 0px 0px 40px 0px;
   }
 
   .flex{
     margin: 0px;
+  }
+
+  input[type="button"]{
+    margin: 0px 0px 0px 40px;
   }
 }
