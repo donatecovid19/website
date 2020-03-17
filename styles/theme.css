@@ -14,10 +14,38 @@ h2{
   text-decoration: underline;
 }
 
+.nav{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 220px;
+  align-items: center;
+}
+
+.button{
+  color: #F2994A;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  height: 48px;
+  width: 128px;
+  border-style: none;
+  border-radius: 20px;
+  border: 2px solid #F2994A;
+  transition-duration: 0.6s;
+  margin: 18px 0px;
+  align-content: flex-end;
+}
+
+.button:hover{
+  color: white;
+  background-color: #F2994A;
+}
+
 .flex{
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 200px;
+  margin: 0px 200px;
 }
 
 .box {
@@ -64,4 +92,14 @@ h2{
 .southamerica{
   color: #5271C1;
   background-color: #9EB1E1;
+}
+
+@media (max-width: 1180px) {
+  .nav{
+    margin: 0px;
+  }
+
+  .flex{
+    margin: 0px;
+  }
 }
