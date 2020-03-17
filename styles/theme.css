@@ -1,0 +1,62 @@
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+h1{
+  font-size: 48px;
+}
+
+h2{
+  font-size: 36px;
+  color: #F2994A;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  flex-grow: 1;
+  font-size: 24px;
+  text-align: center;
+  height: 380px;
+  margin: 10px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 4px 4px 0px #FFFFFF;
+  border-radius: 20px;
+}
+
+.asia{
+  color: #C4A400;
+  background-color: #F8E16B;
+}
+
+.europe{
+  color: #69B42F;
+  background-color: #BBE19E;
+}
+
+.oceania{
+  color: #4598B3;
+  background-color: #9ED1E1;
+}
+
+.africa{
+  color: #CC585E;
+  background-color: #F4A0A5;
+}
+
+.northamerica{
+  color: #D7986B;
+  background-color: #FFCFAC;
+}
+
+.southamerica{
+  color: #5271C1;
+  background-color: #9EB1E1;
+}
