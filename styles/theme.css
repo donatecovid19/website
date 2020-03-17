@@ -191,7 +191,8 @@ input[type="button"]{
 
 @media (max-width: 1180px) {
   h2{
-    font-size: 30px;
+    font-size: 20px;
+    margin: 0px 35px 0px 15px;
     color: #F2994A;
   }
 
@@ -204,6 +205,6 @@ input[type="button"]{
   }
 
   input[type="button"]{
-    margin: 0px 0px 0px 40px;
+    margin: 0px;
   }
 }
