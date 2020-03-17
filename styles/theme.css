@@ -14,8 +14,13 @@ h2{
   text-decoration: underline;
 }
 
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .box {
-  display: inline-block;
+  flex-grow: 1;
   font-size: 24px;
   text-align: center;
   height: 380px;
