@@ -23,6 +23,12 @@ h2{
   transition: 0.4s;
 }
 
+h2 a{
+  color: #F2994A;
+  text-decoration: none;
+  margin-left: 0px;
+}
+
 h2:hover{
   box-shadow: 6px 6px 0px #F2994A;
   transition: 0.4s;
