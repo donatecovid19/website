@@ -21,6 +21,7 @@ h2{
   border-radius: 20px;
   padding: 15px;
   transition: 0.4s;
+  margin-right: 20px;
 }
 
 h2 a{
@@ -206,11 +207,12 @@ input[type="button"]{
   h2{
     font-size: 26px;
     text-align: center;
-    margin: 0px 35px 0px 15px;
+    margin: 0px 35px 10px 15px;
     color: #F2994A;
   }
 
   .nav{
+    display: inline-block;
     margin: 0px 0px 60px 0px;
   }
 
