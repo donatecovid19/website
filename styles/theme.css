@@ -41,7 +41,7 @@ button:hover {
 
 .nav {
   display: center;
-  margin: 2em auto 2em; 
+  margin: 2em auto 2em;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ button:hover {
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
-/* general box area styling */ 
+/* general box area styling */
 
 .flex {
   display: flex;
@@ -99,7 +99,7 @@ button:hover {
 }
 
 .asia h1 {
-  color: #deba04; /* sorry ik this is bad practice! I just needed a temp. quick fix */
+  color: #deba04; 
 }
 
 .asia:hover {
@@ -185,7 +185,7 @@ footer {
   padding: 15px;
 }
 
-/* mobile styling? */ 
+/* mobile styling? */
 
 @media (max-width: 1180px) {
   .flex {
