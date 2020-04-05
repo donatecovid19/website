@@ -34,8 +34,8 @@ button:hover {
 }
 
 .nav {
-  display: flex center;
-  margin: 40px 220px 60px 220px;
+  display: center;
+  margin: 2em auto 2em; 
   text-align: center;
 }
 
@@ -179,27 +179,11 @@ footer {
   padding: 15px;
 }
 
-/* unused right now */ 
+/* mobile styling? */ 
 
 @media (max-width: 1180px) {
-  h2 {
-    font-size: 26px;
-    text-align: center;
-    margin: 0px 35px 10px 15px;
-    color: #f2994a;
-  }
-
-  .nav {
-    display: inline-block;
-    margin: 0px 0px 60px 0px;
-  }
-
   .flex {
     margin: 0px;
-  }
-
-  .asia {
-    height: auto;
   }
 
   input[type='button'] {
