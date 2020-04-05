@@ -8,6 +8,12 @@ h1 {
   margin: -10px 0px 0px 0px;
 }
 
+iframe {
+  width: 100%;
+  height: 700px;
+  border: 0px none transparent;
+}
+
 /* top navbar styling stuff */
 
 button {
