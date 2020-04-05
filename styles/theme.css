@@ -56,11 +56,6 @@ button:hover {
 
 /* general box area styling */ 
 
-a:hover {
-  transition: 0.4s;
-  margin-left: 10px;
-}
-
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +78,11 @@ a:hover {
 .box a {
   color: inherit;
   text-decoration: none;
+}
+
+.box a:hover {
+  transition: 0.4s;
+  margin-left: 10px;
 }
 
 /* continent boxes */
