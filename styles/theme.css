@@ -6,13 +6,13 @@ body{
 
 p{
   text-align: left;
-  margin-top: 10px;
+  margin-bottom: -7px;
 }
 
 h1{
   font-size: 44px;
   text-align: left;
-  margin: -80px 0px 0px 0px;
+  margin: -10px 0px 0px 0px;
 }
 
 h2{
@@ -104,6 +104,7 @@ input[type="button"]{
 
 .asia h1{
   color: #F8E16B;
+  color: #DEBA04; /* sorry ik this is bad practice! I just needed a temp. quick fix */
 }
 
 .asia a{
@@ -122,6 +123,7 @@ input[type="button"]{
 
 .europe h1{
   color: #BBE19E;
+  color: #69B42F;
 }
 
 .europe a{
@@ -140,6 +142,7 @@ input[type="button"]{
 
 .oceania h1{
   color: #9ED1E1;
+  color: #4598B3;
 }
 
 .oceania a{
@@ -158,6 +161,7 @@ input[type="button"]{
 
 .africa h1{
   color: #F4A0A5;
+  color: #CC585E;
 }
 
 .africa a{
@@ -176,6 +180,7 @@ input[type="button"]{
 
 .northamerica h1{
   color: #FFCFAC;
+  color: #D7986B;
 }
 
 .northamerica a{
@@ -194,6 +199,7 @@ input[type="button"]{
 
 .southamerica h1{
   color: #9EB1E1;
+  color: #5271C1;
 }
 
 .southamerica a{
