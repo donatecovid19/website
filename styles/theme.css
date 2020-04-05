@@ -1,92 +1,76 @@
-body{
+/* global styling */
+
+body {
   font-family: sans-serif;
-  font-size: 16px;
-  color: black;
 }
 
-p{
-  text-align: left;
-  margin-bottom: -7px;
-}
-
-h1{
-  font-size: 44px;
-  text-align: left;
+h1 {
   margin: -10px 0px 0px 0px;
 }
 
-h2{
+iframe {
+  width: 100%;
+  height: 700px;
+  border: 0px none transparent;
+}
+
+/* top navbar styling stuff */
+
+button {
+  background-color: #ffffff;
+  font-weight: bold;
   font-size: 24px;
-  color: #F2994A;
-  border: 2px solid #F2994A;
+  color: #f2994a;
+  border: 2px solid #f2994a;
   border-radius: 20px;
   padding: 15px;
   transition: 0.4s;
   margin-right: 20px;
 }
 
-h2 a{
-  color: #F2994A;
+button a {
+  color: #f2994a;
   text-decoration: none;
   margin-left: 0px;
 }
 
-h2:hover{
-  box-shadow: 6px 6px 0px #F2994A;
+button:hover {
+  box-shadow: 6px 6px 0px #f2994a;
   transition: 0.4s;
 }
 
-a{
-  transition: 0.4s;
+.nav {
+  display: center;
+  margin: 2em auto 2em; 
+  text-align: center;
 }
 
-a:hover{
-  transition: 0.4s;
-  margin-left: 10px;
+/* scrollbar stuff */
+
+#box::-webkit-scrollbar {
+  width: 0px; /* width of scrollbar */
 }
 
-.nav{
-  display: flex;
-  flex-direction: row;
-  margin: 20px 220px 60px 220px;
-  align-items: center;
+#box::-webkit-scrollbar-thumb {
+  background-color: #948f8f; /* foreground color of scrollbar */
 }
 
-input[type="button"]{
-  margin: 0px 0px 0px 700px;
+#box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* background color of scrollbar */
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
-.button{
-  color: #F2994A;
-  font-family: sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  background-color: white;
-  height: 48px;
-  width: 128px;
-  border-style: none;
-  border-radius: 20px;
-  border: 2px solid #F2994A;
-  transition-duration: 0.6s;
-  margin: 18px 0px;
-  align-content: flex-end;
-}
+/* general box area styling */ 
 
-.button:hover{
-  color: white;
-  background-color: #F2994A;
-}
-
-.flex{
+.flex {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 200px;
+  margin: 0% 10%;
 }
 
 .box {
   flex-grow: 1;
   font-size: 24px;
-  text-align: center;
   height: 280px;
   width: 300px;
   margin: 10px 10px 60px 10px;
@@ -94,145 +78,121 @@ input[type="button"]{
   background-color: white;
   border-radius: 20px;
   transition: 0.5s;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
-.asia{
-  color: #DEBA04;
-  background-color: #F8E16B;
-}
-
-.asia h1{
-  color: #F8E16B;
-  color: #DEBA04; /* sorry ik this is bad practice! I just needed a temp. quick fix */
-}
-
-.asia a{
+.box a {
   color: inherit;
   text-decoration: none;
 }
 
-.asia:hover{
-  box-shadow: 10px 10px 0px #C4A400;
+.box a:hover {
+  transition: 0.4s;
+  margin-left: 10px;
 }
 
-.europe{
-  color: #69B42F;
-  background-color: #BBE19E;
+/* continent boxes */
+
+.asia {
+  color: #deba04;
+  background-color: #f8e16b;
 }
 
-.europe h1{
-  color: #BBE19E;
-  color: #69B42F;
+.asia h1 {
+  color: #deba04; /* sorry ik this is bad practice! I just needed a temp. quick fix */
 }
 
-.europe a{
-  color: inherit;
-  text-decoration: none;
+.asia:hover {
+  box-shadow: 10px 10px 0px #c4a400;
 }
 
-.europe:hover{
-  box-shadow: 10px 10px 0px #69B42F;
+.europe {
+  color: #69b42f;
+  background-color: #bbe19e;
 }
 
-.oceania{
-  color: #4598B3;
-  background-color: #9ED1E1;
+.europe h1 {
+  margin: -10px 0px 0px 0px;
+  color: #69b42f;
 }
 
-.oceania h1{
-  color: #9ED1E1;
-  color: #4598B3;
+.europe:hover {
+  box-shadow: 10px 10px 0px #69b42f;
 }
 
-.oceania a{
-  color: inherit;
-  text-decoration: none;
+.oceania {
+  color: #4598b3;
+  background-color: #9ed1e1;
 }
 
-.oceania:hover{
-  box-shadow: 10px 10px 0px #4598B3;
+.oceania h1 {
+  color: #9ed1e1;
+  color: #4598b3;
 }
 
-.africa{
-  color: #CC585E;
-  background-color: #F4A0A5;
+.oceania:hover {
+  box-shadow: 10px 10px 0px #4598b3;
 }
 
-.africa h1{
-  color: #F4A0A5;
-  color: #CC585E;
+.africa {
+  color: #cc585e;
+  background-color: #f4a0a5;
 }
 
-.africa a{
-  color: inherit;
-  text-decoration: none;
+.africa h1 {
+  color: #f4a0a5;
+  color: #cc585e;
 }
 
-.africa:hover{
-  box-shadow: 10px 10px 0px #CC585E;
+.africa:hover {
+  box-shadow: 10px 10px 0px #cc585e;
 }
 
-.northamerica{
-  color: #D7986B;
-  background-color: #FFCFAC;
+.northamerica {
+  color: #d7986b;
+  background-color: #ffcfac;
 }
 
-.northamerica h1{
-  color: #FFCFAC;
-  color: #D7986B;
+.northamerica h1 {
+  color: #ffcfac;
+  color: #d7986b;
 }
 
-.northamerica a{
-  color: inherit;
-  text-decoration: none;
+.northamerica:hover {
+  box-shadow: 10px 10px 0px #d7986b;
 }
 
-.northamerica:hover{
-  box-shadow: 10px 10px 0px #D7986B;
+.southamerica {
+  color: #5271c1;
+  background-color: #9eb1e1;
 }
 
-.southamerica{
-  color: #5271C1;
-  background-color: #9EB1E1;
+.southamerica h1 {
+  color: #9eb1e1;
+  color: #5271c1;
 }
 
-.southamerica h1{
-  color: #9EB1E1;
-  color: #5271C1;
+.southamerica:hover {
+  box-shadow: 10px 10px 0px #5271c1;
 }
 
-.southamerica a{
-  color: inherit;
-  text-decoration: none;
+/* footer stuff */
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  color: #f2994a;
+  padding: 15px;
 }
 
-.southamerica:hover{
-  box-shadow: 10px 10px 0px #5271C1;
-}
+/* mobile styling? */ 
 
 @media (max-width: 1180px) {
-  h2{
-    font-size: 26px;
-    text-align: center;
-    margin: 0px 35px 10px 15px;
-    color: #F2994A;
-  }
-
-  .nav{
-    display: inline-block;
-    margin: 0px 0px 60px 0px;
-  }
-
-  .flex{
+  .flex {
     margin: 0px;
   }
 
-  .asia{
-    height: auto;
-  }
-
-  input[type="button"]{
+  input[type='button'] {
     margin: 0px;
   }
 }
