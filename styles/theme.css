@@ -6,6 +6,7 @@ body{
 
 p{
   text-align: left;
+  margin-top: 10px;
 }
 
 h1{
@@ -93,6 +94,7 @@ input[type="button"]{
   background-color: white;
   border-radius: 20px;
   transition: 0.5s;
+  overflow: scroll;
 }
 
 .asia{
