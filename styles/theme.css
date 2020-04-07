@@ -10,8 +10,9 @@ h1 {
 
 iframe {
   width: 100%;
-  height: 700px;
+  height: 900px;
   border: 0px none transparent;
+  overflow: hidden;
 }
 
 /* top navbar styling */
@@ -200,6 +201,7 @@ footer {
     height: auto;
   }
 
+  /* FIX. Still 2 lines on my mobile */
   button{
     font-size: 18px;
   }
