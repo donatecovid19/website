@@ -17,7 +17,7 @@ iframe {
 /* top navbar styling */
 
 img{
-  width: 50%;
+  width: 800px;
   height: auto;
 }
 
@@ -193,6 +193,15 @@ footer {
 @media (max-width: 1180px) {
   .flex {
     margin: 0px;
+  }
+
+  img{
+    width: 400px;
+    height: auto;
+  }
+
+  .nav a{
+    font-size: 20px;
   }
 
   input[type='button'] {
