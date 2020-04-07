@@ -201,9 +201,9 @@ footer {
     height: auto;
   }
 
-  /* FIX. Still 2 lines on my mobile */
   button{
     font-size: 18px;
+    padding: 5px 10px;
   }
 
   input[type='button'] {
