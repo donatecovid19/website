@@ -16,6 +16,11 @@ iframe {
 
 /* top navbar styling */
 
+img{
+  width: 50%;
+  height: auto;
+}
+
 button {
   background-color: #ffffff;
   font-weight: bold;
