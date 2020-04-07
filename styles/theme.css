@@ -14,7 +14,7 @@ iframe {
   border: 0px none transparent;
 }
 
-/* top navbar styling stuff */
+/* top navbar styling */
 
 button {
   background-color: #ffffff;
@@ -45,7 +45,7 @@ button:hover {
   text-align: center;
 }
 
-/* scrollbar stuff */
+/* scrollbar */
 
 #box::-webkit-scrollbar {
   width: 0px; /* width of scrollbar */
@@ -91,19 +91,33 @@ button:hover {
   margin-left: 10px;
 }
 
-/* continent boxes */
+/* alphabetized continent boxes */
+
+.africa {
+  color: #d7986b;
+  background-color: #ffcfac;
+}
+
+.africa:hover {
+  box-shadow: 10px 10px 0px #d7986b;
+}
 
 .asia {
   color: #deba04;
   background-color: #f8e16b;
 }
 
-.asia h1 {
-  color: #deba04; 
-}
-
 .asia:hover {
   box-shadow: 10px 10px 0px #c4a400;
+}
+
+.centralamerica {
+  color: #E78B36;
+  background-color: #FFBB7C;
+}
+
+.centralamerica:hover {
+  box-shadow: 10px 10px 0px #E78B36;
 }
 
 .europe {
@@ -111,72 +125,56 @@ button:hover {
   background-color: #bbe19e;
 }
 
-.europe h1 {
-  margin: -10px 0px 0px 0px;
-  color: #69b42f;
-}
-
 .europe:hover {
   box-shadow: 10px 10px 0px #69b42f;
 }
 
-.oceania {
-  color: #4598b3;
-  background-color: #9ed1e1;
+.global {
+  color: #B1BF05;
+  background-color: #EAF473;
 }
 
-.oceania h1 {
-  color: #9ed1e1;
-  color: #4598b3;
+.global:hover {
+  box-shadow: 10px 10px 0px #B1BF05;
 }
 
-.oceania:hover {
-  box-shadow: 10px 10px 0px #4598b3;
+.middleeast {
+  color: #9843AC;
+  background-color: #C592D1;
 }
 
-.africa {
+.middleeast:hover {
+  box-shadow: 10px 10px 0px #9843AC;
+}
+
+.northamerica {
   color: #cc585e;
   background-color: #f4a0a5;
 }
 
-.africa h1 {
-  color: #f4a0a5;
-  color: #cc585e;
-}
-
-.africa:hover {
+.northamerica:hover {
   box-shadow: 10px 10px 0px #cc585e;
 }
 
-.northamerica {
-  color: #d7986b;
-  background-color: #ffcfac;
-}
-
-.northamerica h1 {
-  color: #ffcfac;
-  color: #d7986b;
-}
-
-.northamerica:hover {
-  box-shadow: 10px 10px 0px #d7986b;
-}
-
-.southamerica {
+.oceania {
   color: #5271c1;
   background-color: #9eb1e1;
 }
 
-.southamerica h1 {
-  color: #9eb1e1;
-  color: #5271c1;
-}
-
-.southamerica:hover {
+.oceania:hover {
   box-shadow: 10px 10px 0px #5271c1;
 }
 
-/* footer stuff */
+.southamerica {
+  color: #4598b3;
+  background-color: #9ed1e1;
+}
+
+.southamerica:hover {
+  box-shadow: 10px 10px 0px #4598b3;
+}
+
+/* footer */
 
 footer {
   font-size: 14px;
@@ -185,7 +183,7 @@ footer {
   padding: 15px;
 }
 
-/* mobile styling? */
+/* mobile styling */
 
 @media (max-width: 1180px) {
   .flex {
