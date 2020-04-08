@@ -204,9 +204,9 @@ footer {
 
 /* mobile styling */
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .grid {
-    max-width: 1140px;
+    max-width: 1120px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "global asia"
@@ -217,7 +217,7 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .grid {
     max-width: 720px;
     grid-template-columns: 1fr;
