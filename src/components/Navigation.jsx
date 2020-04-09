@@ -25,6 +25,14 @@ function Navigation(props) {
               </span>
             </Link>
           </button>
+          <button>
+            <Link class='nav-link' to='/ideas'>
+              idea?{' '}
+              <span role='img' aria-label='light'>
+                &#128161;
+              </span>
+            </Link>
+          </button>
         </p>
       </header>
     </div>
