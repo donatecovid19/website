@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, Form, Ideas } from "./components";
+import { Navigation, Footer, Form, Ideas } from "./components";
+import Home from './components/home_page/Home.jsx'
 
 class App extends React.Component {
   render() {
