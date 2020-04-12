@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 
 function Home() {
   return (
-    <div className='form'>
+    <div className="form">
       <title>Idea?</title>
-      <iframe title="Ideas Link Google Form" src="https://docs.google.com/forms/d/e/1FAIpQLSex9qU519nOfljebYKqSBzGfy-JZo1uTAVNzWd_waXtNDrUbQ/viewform?embedded=true">
+      <iframe
+        title="Ideas Link Google Form"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSex9qU519nOfljebYKqSBzGfy-JZo1uTAVNzWd_waXtNDrUbQ/viewform?embedded=true"
+      >
         Loading…
       </iframe>
     </div>

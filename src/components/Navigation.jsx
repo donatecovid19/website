@@ -1,34 +1,34 @@
-import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import React from "react";
+import { Link, withRouter } from "react-router-dom";
 
 function Navigation(props) {
   return (
-    <div className='nav'>
+    <div className="nav">
       <header>
-        <Link class='nav-link' to='/'>
-          <img src='img/logo.png' alt='Logo Banner' />
+        <Link class="nav-link" to="/">
+          <img src="img/logo.png" alt="Logo Banner" />
         </Link>
         <p>
           <button>
-            <Link class='nav-link' to='/'>
-              home{' '}
-              <span role='img' aria-label='house'>
+            <Link class="nav-link" to="/">
+              home{" "}
+              <span role="img" aria-label="house">
                 &#127968;
               </span>
             </Link>
           </button>
           <button>
-            <Link class='nav-link' to='/form'>
-              share a donation link!{' '}
-              <span role='img' aria-label='globe'>
+            <Link class="nav-link" to="/form">
+              share a donation link!{" "}
+              <span role="img" aria-label="globe">
                 &#127760;
               </span>
             </Link>
           </button>
           <button>
-            <Link class='nav-link' to='/ideas'>
-              idea?{' '}
-              <span role='img' aria-label='light'>
+            <Link class="nav-link" to="/ideas">
+              idea?{" "}
+              <span role="img" aria-label="light">
                 &#128161;
               </span>
             </Link>

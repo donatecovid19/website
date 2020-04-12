@@ -82,11 +82,11 @@ footer {
     max-width: 1120px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      'global asia'
-      'europe namerica'
-      'camerica samerica'
-      'africa oceania'
-      'meast meast';
+      "global asia"
+      "europe namerica"
+      "camerica samerica"
+      "africa oceania"
+      "meast meast";
   }
 }
 
@@ -95,15 +95,15 @@ footer {
     max-width: 720px;
     grid-template-columns: 1fr;
     grid-template-areas:
-      'global'
-      'asia'
-      'europe'
-      'namerica'
-      'camerica'
-      'samerica'
-      'africa'
-      'oceania'
-      'meast';
+      "global"
+      "asia"
+      "europe"
+      "namerica"
+      "camerica"
+      "samerica"
+      "africa"
+      "oceania"
+      "meast";
   }
 
   img {
