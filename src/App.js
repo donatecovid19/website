@@ -7,7 +7,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-
         <Router>
           <Navigation />
           <Switch>
@@ -17,7 +16,7 @@ class App extends React.Component {
           </Switch>
           <Footer />
         </Router>
-      </div >
+      </div>
     );
   }
 }
