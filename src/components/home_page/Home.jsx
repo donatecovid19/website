@@ -1,5 +1,5 @@
-import React from "react";
-import "./Home.css";
+import React from 'react';
+import './Home.css'
 
 // Template: {name:"", url:'http://bit.ly/donateFIXcovid19'},
 // TODO: Mobile responsiveness

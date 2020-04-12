@@ -37,7 +37,7 @@ function Footer() {
 					rel="noopener noreferrer"
 					target="_blank"
 				>
-					Michael
+					Michael Cao
 				</a>{" "}
 
 				<a href="#" rel="noopener noreferrer" target="_blank">
