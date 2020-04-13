@@ -10,14 +10,14 @@ function Footer() {
         </span>{" "}
         by{" "}
         <a href="#" rel="noopener noreferrer" target="_blank">
-          Allison
+          Allison Yick
         </a>{" "}
         <a
           href="https://www.youtube.com/channel/UC9xFO-llZ2ontatfj9LtLxw"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Jack
+          Jack He
         </a>{" "}
         <a
           href="https://www.youtube.com/user/alohakatiex"
@@ -27,7 +27,7 @@ function Footer() {
           Katie Tracy
         </a>{" "}
         <a href="#" rel="noopener noreferrer" target="_blank">
-          Katie L.
+          Katie Li
         </a>{" "}
         <a
           href="https://michaelcao.tech"
@@ -37,14 +37,14 @@ function Footer() {
           Michael Cao
         </a>{" "}
         <a href="#" rel="noopener noreferrer" target="_blank">
-          Mira
+          Mira Dhingra
         </a>{" "}
         <a
           href="https://www.instagram.com/sancho.syquia/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Sancho
+          Sancho Syquia
         </a>
         <p>
           Image Source:{" "}
