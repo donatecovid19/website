@@ -1,71 +1,3 @@
-/* global styling */
-
-body {
-  font-family: sans-serif;
-}
-
-h1 {
-  margin: -10px 0px 0px 0px;
-}
-
-iframe {
-  width: 100%;
-  height: 900px;
-  border: 0px none transparent;
-  overflow: hidden;
-}
-
-/* top navbar styling */
-
-img{
-  width: 800px;
-  height: auto;
-}
-
-button {
-  background-color: #ffffff;
-  font-weight: bold;
-  font-size: 24px;
-  color: #f2994a;
-  border: 2px solid #f2994a;
-  border-radius: 20px;
-  padding: 10px 20px;
-  transition: 0.4s;
-  margin-right: 10px;
-}
-
-button a {
-  color: #f2994a;
-  text-decoration: none;
-  margin-left: 0px;
-}
-
-button:hover {
-  box-shadow: 6px 6px 0px #f2994a;
-  transition: 0.4s;
-}
-
-.nav {
-  display: center;
-  margin: 2em auto 2em;
-  text-align: center;
-}
-
-/* scrollbar */
-
-#box::-webkit-scrollbar {
-  width: 0px; /* width of scrollbar */
-}
-
-#box::-webkit-scrollbar-thumb {
-  background-color: #948f8f; /* foreground color of scrollbar */
-}
-
-#box::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* background color of scrollbar */
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-
 /* general box area styling */
 
 .grid {
@@ -75,9 +7,9 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: repeat(3, 1fr);
   grid-template-areas:
-  "global asia europe"
-  "namerica camerica samerica"
-  "africa oceania meast";
+    "global asia europe"
+    "namerica camerica samerica"
+    "africa oceania meast";
 }
 
 .box {
@@ -124,13 +56,12 @@ button:hover {
 }
 
 .centralamerica {
-  color: #E78B36;
-  background-color: #FFBB7C;
-  grid-area: camerica;
+  color: #e78b36;
+  background-color: #ffbb7c;
 }
 
 .centralamerica:hover {
-  box-shadow: 10px 10px 0px #E78B36;
+  box-shadow: 10px 10px 0px #e78b36;
 }
 
 .europe {
@@ -144,23 +75,23 @@ button:hover {
 }
 
 .global {
-  color: #B1BF05;
-  background-color: #EAF473;
+  color: #b1bf05;
+  background-color: #eaf473;
   grid-area: global;
 }
 
 .global:hover {
-  box-shadow: 10px 10px 0px #B1BF05;
+  box-shadow: 10px 10px 0px #b1bf05;
 }
 
 .middleeast {
-  color: #9843AC;
-  background-color: #C592D1;
+  color: #9843ac;
+  background-color: #c592d1;
   grid-area: meast;
 }
 
 .middleeast:hover {
-  box-shadow: 10px 10px 0px #9843AC;
+  box-shadow: 10px 10px 0px #9843ac;
 }
 
 .northamerica {
@@ -193,15 +124,6 @@ button:hover {
   box-shadow: 10px 10px 0px #4598b3;
 }
 
-/* footer */
-
-footer {
-  font-size: 14px;
-  text-align: center;
-  color: #f2994a;
-  padding: 15px;
-}
-
 /* mobile styling */
 
 @media (max-width: 1600px) {
@@ -209,11 +131,11 @@ footer {
     max-width: 1120px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "global asia"
-    "europe namerica"
-    "camerica samerica"
-    "africa oceania"
-    "meast meast";
+      "global asia"
+      "europe namerica"
+      "camerica samerica"
+      "africa oceania"
+      "meast meast";
   }
 }
 
@@ -222,25 +144,24 @@ footer {
     max-width: 720px;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "global"
-    "asia"
-    "europe"
-    "namerica"
-    "camerica"
-    "samerica"
-    "africa"
-    "oceania"
-    "meast";
+      "global"
+      "asia"
+      "europe"
+      "namerica"
+      "camerica"
+      "samerica"
+      "africa"
+      "oceania"
+      "meast";
   }
 
-  img{
+  img {
     width: 450px;
   }
 }
 
-
 @media (max-width: 480px) {
-  img{
+  img {
     width: 300px;
   }
 
@@ -248,7 +169,7 @@ footer {
     font-size: 18px;
   }
 
-  button{
+  button {
     font-size: 18px;
     padding: 5px 10px;
   }
