@@ -6,7 +6,7 @@ import "./Home.css";
 
 const GLOBAL = [
   { name: "Children's Hunger Fund", url: "https://bit.ly/donateCHFcovid19" },
-  { name: "Unicef'", url: "https://uni.cf/2V8fODA" },
+  { name: "Unicef", url: "https://uni.cf/2V8fODA" },
   { name: "United Nations", url: "https://bit.ly/donateUNcovid19" },
   { name: "World Health Organization", url: "http://bit.ly/donateWHO" },
 ];
