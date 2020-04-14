@@ -1,5 +1,5 @@
-import React from 'react';
-import './Home.css'
+import React from "react";
+import "./Home.css";
 
 // Template: {name:"", url:'http://bit.ly/donateFIXcovid19'},
 // TODO: Mobile responsiveness
@@ -15,10 +15,7 @@ const ASIA = [
 	{ name: "Afghanistan", url: "http://bit.ly/donateAFcovid19" },
 	{ name: "China", url: "http://bit.ly/donateCNcovid19" },
 	{ name: "Hong Kong (Red Cross)", url: "http://bit.ly/donateHKcovid19" },
-	{
-		name: "Hong Kong (Save the Children)",
-		url: "http://bit.ly/donateSTCcovid19",
-	},
+	{ name: "Hong Kong (Save the Children)", url: "http://bit.ly/donateSTCcovid19" },
 	{ name: "India (Give)", url: "http://bit.ly/donateGIcovid19" },
 	{ name: "India (Rapid Response)", url: "http://bit.ly/donateINDcovid19" },
 	{ name: "Indonesia", url: "http://bit.ly/donateINcovid19" },

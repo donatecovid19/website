@@ -18,18 +18,18 @@ function Navigation(props) {
             </Link>
           </button>
           <button>
-            <Link class='nav-link' to='/form'>
-              share a donation link!{' '}
-              <span role='img' aria-label='globe'>
-                &#127760;
+            <Link class='nav-link' to='/ideas'>
+              ideas?{' '}
+              <span role='img' aria-label='light'>
+                &#128161;
               </span>
             </Link>
           </button>
           <button>
-            <Link class='nav-link' to='/ideas'>
-              idea?{' '}
-              <span role='img' aria-label='light'>
-                &#128161;
+            <Link class='nav-link' to='/form'>
+              share a donation link!{' '}
+              <span role='img' aria-label='globe'>
+                &#127760;
               </span>
             </Link>
           </button>
