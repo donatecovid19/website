@@ -1,16 +1,17 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import ReactGA from "react-ga";
 
 function Navigation(props) {
   return (
     <div className="nav">
       <header>
-        <Link class="nav-link" to="/">
+        <ReactGA.OutboundLink eventLabel="Logo" to="/" target="_self">
           <img src="img/logo.png" alt="Logo Banner" />
-        </Link>
+        </ReactGA.OutboundLink>
         <p>
           <button>
-            <Link class="nav-link" to="/">
+            <Link className="nav-link" to="/">
               home{" "}
               <span role="img" aria-label="house">
                 &#127968;
@@ -18,7 +19,7 @@ function Navigation(props) {
             </Link>
           </button>
           <button>
-            <Link class="nav-link" to="/form">
+            <Link className="nav-link" to="/form">
               share a donation link!{" "}
               <span role="img" aria-label="globe">
                 &#127760;
@@ -26,7 +27,7 @@ function Navigation(props) {
             </Link>
           </button>
           <button>
-            <Link class="nav-link" to="/ideas">
+            <Link className="nav-link" to="/ideas">
               idea?{" "}
               <span role="img" aria-label="light">
                 &#128161;
