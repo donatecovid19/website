@@ -135,31 +135,24 @@ class Home extends React.Component {
     }
 }
 
-class Link extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
+function Link(props) {
+    function handleClick() {
+        console.log("The link was clicked.");
+        Event("Donation Link Clicked", props.name, "HOME_PAGE");
     }
 
-    // props: String url, String name
-    render() {
-        return (
-            <p>
-                <a
-                    href={this.props.url}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    onClick={() => this.handleClick()}
-                >
-                    {this.props.name}
-                </a>
-            </p>
-        );
-    }
-
-    handleClick() {
-        Event("Donation Link Clicked", this.props.name, "HOME_PAGE");
-    }
+    return (
+        <p>
+            <a
+                href={props.url}
+                rel="noopener noreferrer"
+                target="_blank"
+                onClick={handleClick}
+            >
+                {props.name}
+            </a>
+        </p>
+    );
 }
 
 const Box = (props) => {

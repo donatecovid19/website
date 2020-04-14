@@ -16,6 +16,7 @@ export const PageView = () => {
  * @param {string} label 
  */
 export const Event = (category, action, label) => {
+    initGA('UA-160829657-1');
     ReactGA.event({
         category: category,
         action: action,
