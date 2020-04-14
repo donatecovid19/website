@@ -139,8 +139,6 @@ class Home extends React.Component {
 
 function Link(props) {
     function handleClick() {
-        console.log("The link was clicked.");
-
         ReactGA.event({
             category: "Donation Link Clicked",
             action: props.name,
