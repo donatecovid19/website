@@ -8,6 +8,7 @@ const GLOBAL = [
 	{ name: "Children's Hunger Fund", url: "https://bit.ly/donateCHFcovid19" },
 	{ name: "Unicef'", url: "https://uni.cf/2V8fODA" },
 	{ name: "United Nations", url: "https://bit.ly/donateUNcovid19" },
+	{ name: "United Way", url: "https://secure.unitedway.org/j/step/covid19-donate?source=landingpage&subsource=covid19&utm_source=landingpage&utm_medium=web&utm_campaign=covid19&utm_content=donate" },
 	{ name: "World Health Organization", url: "http://bit.ly/donateWHO" },
 ];
 
@@ -57,7 +58,6 @@ const EUROPE = [
 
 // TODO: Separate USA and Canada
 const NORTH_AMERICA = [
-	{ name: "Alexandria, VA (United Way)", url: "https://secure.unitedway.org/j/step/covid19-donate?source=landingpage&subsource=covid19&utm_source=landingpage&utm_medium=web&utm_campaign=covid19&utm_content=donate" },
 	{ name: "Atlanta, GA (Emory)", url: "http://bit.ly/donateEMcovid19" },
 	{ name: "Atlanta, GA (Food Bank)", url: "http://bit.ly/donateATLcovid19" },
 	{ name: "Austin, TX", url: "http://bit.ly/donateATXcovid19" },
@@ -77,7 +77,6 @@ const NORTH_AMERICA = [
 	{ name: "Seattle, WA (Seattle Foundation)", url: "http://bit.ly/donateUWcovid19"},
 	{ name: "Washington, D.C.", url: "https://www.northwestharvest.org/" },
 	{ name: "Canada (Red Cross)", url: "http://bit.ly/donateCNDcovid19" },
-	{ name: "Canada (Fraser Valley)", url: "http://bit.ly/donateFVHcovid19" },
 	{ name: "Canada (CanadaHelps)", url: "https://www.canadahelps.org/en/cause-funds/covid-19-community-care-fund/" },
 ];
 
