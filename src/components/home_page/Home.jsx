@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Event } from "../tracking";
 
 // Template: {name:"", url:'http://bit.ly/donateFIXcovid19'},
 // TODO: Mobile responsiveness
@@ -60,8 +61,16 @@ const NORTH_AMERICA = [
     name: "Seattle, WA (Seattle Foundation)",
     url: "http://bit.ly/donateUWcovid19",
   },
-  { name: "Canada (Red Cross)", url: "http://bit.ly/donateCNDcovid19", isCanada: true },
-  { name: "Canada (Fraser Valley)", url: "http://bit.ly/donateFVHcovid19", isCanada: true },
+  {
+    name: "Canada (Red Cross)",
+    url: "http://bit.ly/donateCNDcovid19",
+    isCanada: true,
+  },
+  {
+    name: "Canada (Fraser Valley)",
+    url: "http://bit.ly/donateFVHcovid19",
+    isCanada: true,
+  },
 ];
 
 const CENTRAL_AMERICA = [
@@ -85,7 +94,12 @@ const Link = (props) => {
   // props: String url, String name
   return (
     <p>
-      <a href={props.url} rel="noopener noreferrer" target="_blank">
+      <a
+        href={props.url}
+        rel="noopener noreferrer"
+        target="_blank"
+        onClick={() => Event("Donation Link Clicked", props.name, "HOME_PAGE")}
+      >
         {props.name}
       </a>
     </p>
@@ -104,37 +118,42 @@ const Box = (props) => {
   );
 };
 
-
 const NorthAmerica = (props) => {
   // props: String name, List<Link> list_of_links, String className
 
-  var allCanadaLinks = []
-  var allUsaLinks = []
+  var allCanadaLinks = [];
+  var allUsaLinks = [];
 
   for (var i = 0; i < props.list_of_links.length; ++i) {
     if (props.list_of_links[i].isCanada) {
       // console.log(props.list_of_links[i])
-      allCanadaLinks.push(props.list_of_links[i])
+      allCanadaLinks.push(props.list_of_links[i]);
     } else {
       // console.log(props.list_of_links[i])
-      allUsaLinks.push(props.list_of_links[i])
+      allUsaLinks.push(props.list_of_links[i]);
     }
   }
 
   return (
     <div className={`box ${props.className}`} id="box">
-        <h1> {props.name} </h1>
-        <p> <strong> USA: </strong></p>
-        {allUsaLinks.map((link) => {
-          return <Link url={link.url} name={link.name} />;
-        })}
-        <p> <strong> Canada: </strong></p>
-        {allCanadaLinks.map((link) => {
-          return <Link url={link.url} name={link.name} />;
-        })}
+      <h1> {props.name} </h1>
+      <p>
+        {" "}
+        <strong> USA: </strong>
+      </p>
+      {allUsaLinks.map((link) => {
+        return <Link url={link.url} name={link.name} />;
+      })}
+      <p>
+        {" "}
+        <strong> Canada: </strong>
+      </p>
+      {allCanadaLinks.map((link) => {
+        return <Link url={link.url} name={link.name} />;
+      })}
     </div>
-    )
-}
+  );
+};
 
 function Home() {
   return (
@@ -142,20 +161,23 @@ function Home() {
       <title>Donate to Fight COVID-19</title>
       <div class="grid">
         <Box name="Global" list_of_links={GLOBAL} className="global" />
+
         <Box name="Asia" list_of_links={ASIA} className="asia" />
+
         <Box name="Europe" list_of_links={EUROPE} className="europe" />
 
         <NorthAmerica
-        name="North America"
-        list_of_links={NORTH_AMERICA}
-        className="northamerica">
-        </NorthAmerica>
+          name="North America"
+          list_of_links={NORTH_AMERICA}
+          className="northamerica"
+        ></NorthAmerica>
 
         <Box
           name="Central America"
           list_of_links={CENTRAL_AMERICA}
           className="centralamerica"
         />
+
         <Box
           name="South America"
           list_of_links={SOUTH_AMERICA}
@@ -163,7 +185,9 @@ function Home() {
         />
 
         <Box name="Africa" list_of_links={AFRICA} className="africa" />
+
         <Box name="Oceania" list_of_links={OCEANIA} className="oceania" />
+
         <Box
           name="Middle East"
           list_of_links={MIDDLE_EAST}

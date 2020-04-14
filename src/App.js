@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Form, Ideas } from "./components";
-import Home from './components/home_page/Home.jsx'
+import { Navigation, Footer, Form, Ideas, Home } from "./components";
+
+import { PageView, initGA } from './components/tracking';
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,11 @@ class App extends React.Component {
         </Router>
       </div>
     );
+  }
+
+  componentDidMount() {
+    initGA('UA-160829657-1');
+    PageView();
   }
 }
 

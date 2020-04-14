@@ -9,7 +9,11 @@ function Footer() {
           &#129505;
         </span>{" "}
         by{" "}
-        <a href="#" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://allisonyick.myportfolio.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           Allison Yick
         </a>{" "}
         <a
@@ -26,17 +30,22 @@ function Footer() {
         >
           Katie Tracy
         </a>{" "}
-        <a href="#" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://ykatieli.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           Katie Li
         </a>{" "}
         <a
           href="https://michaelcao.tech"
+          onclick="captureOutboundLink('https://michaelcao.tech'); return false;"
           rel="noopener noreferrer"
           target="_blank"
         >
           Michael Cao
         </a>{" "}
-        <a href="#" rel="noopener noreferrer" target="_blank">
+        <a href="/" rel="noopener noreferrer" target="_blank">
           Mira Dhingra
         </a>{" "}
         <a
