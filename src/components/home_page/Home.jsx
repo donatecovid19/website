@@ -16,43 +16,69 @@ const ASIA = [
 	{ name: "China", url: "http://bit.ly/donateCNcovid19" },
 	{ name: "Hong Kong (Red Cross)", url: "http://bit.ly/donateHKcovid19" },
 	{ name: "Hong Kong (Save the Children)", url: "http://bit.ly/donateSTCcovid19" },
+	{ name: "Japan (Plan International)", url: "https://www.plan-international.jp/news/info/20200331_21914/" },
 	{ name: "India (Give)", url: "http://bit.ly/donateGIcovid19" },
 	{ name: "India (Rapid Response)", url: "http://bit.ly/donateINDcovid19" },
 	{ name: "Indonesia", url: "http://bit.ly/donateINcovid19" },
+	{ name: "Indonesia (Dompet Dhuafa)", url: "https://donasi.dompetdhuafa.org/bersamalawancorona/" },
+	{ name: "Korea (Plan International)", url: "https://www.plankorea.or.kr/news/event/view/5043" },
 	{ name: "Malaysia", url: "http://bit.ly/donateMYcovid2019" },
+	{ name: "Malayasia (Kitajagakita)", url: "https://kitajagakita.com/pages/submit-an-initiative-for-listing" },
+	{ name: "Malaysia (MERCY)", url: "https://www.mercy.org.my/donate/wakaf-covid19/" },
 	{ name: "Pakistan", url: "http://bit.ly/donatePKcovid19" },
 	{ name: "Philippines", url: "http://bit.ly/donatePHcovid19" },
 	{ name: "Philippines (Masterlist)", url: "http://bit.ly/donatePHIcovid19" },
+	{ name: "Philippines (Project Pearls)", url: "https://www.projectpearls.org/donate/" },
 	{ name: "Singapore", url: "http://bit.ly/donateSGcovid19" },
+	{ name: "Singapore (SG United)", url: "https://www.sgunited.gov.sg/" },
 ];
 
 const EUROPE = [
+	{ name: "Belgium (Foundation Roi Baudouin)", url: "https://donate.kbs-frb.be/Covid-19/~mon-don?_cv=1" },
+	{ name: "Denmark (Plan International)", url: "https://planbornefonden.dk/corona/" },
+	{ name: "Finland (Plan International)", url: "https://lahjoita.plan.fi/lahjoitus" },
+	{ name: "France (Plan International)", url: "https://formulaire.plan-international.fr/covid19/~mon-don" },
 	{ name: "Germany", url: "http://bit.ly/donateDEcovid19" },
+	{ name: "Germany (Maecenata)", url: "https://web.maecenata.eu/spenden?fb_item_id_fix=27166/" },
 	{ name: "Italy", url: "http://bit.ly/donateITcovid19" },
+	{ name: "Italy (Protezione Civile)", url: "http://www.protezionecivile.gov.it/attivita-rischi/rischio-sanitario/emergenze/coronavirus" },
+	{ name: "Italy (Regione del Veneto)", url: "https://www.regione.veneto.it/article-detail?articleId=4335623" },
 	{ name: "Netherlands", url: "http://bit.ly/donateNLcovid19" },
+	{ name: "Netherlands (Plan International)", url: "https://www.planinternational.nl/forms/stop-verspreiding-coronavirus" },
+	{ name: "Norway (Plan International)", url: "https://www.facebook.com/donate/2531936430404492/" },
 	{ name: "Poland", url: "http://bit.ly/donatePLcovid19" },
 	{ name: "Portugal (Go Parity)", url: "http://bit.ly/donatePTGcovid19" },
 	{ name: "Portugal (Red Cross)", url: "http://bit.ly/donatePTcovid19" },
 	{ name: "Slovenia", url: "http://bit.ly/donateSIcovid19" },
 	{ name: "Spain", url: "http://bit.ly/donateEScovid19" },
+	{ name: "Sweden (Plan international)", url: "https://plansverige.org/skank-en-gava/" },
 	{ name: "UK", url: "http://bit.ly/donateUKcovid19" },
 ];
 
 // TODO: Separate USA and Canada
 const NORTH_AMERICA = [
+	{ name: "Alexandria, VA (United Way)", url: "https://secure.unitedway.org/j/step/covid19-donate?source=landingpage&subsource=covid19&utm_source=landingpage&utm_medium=web&utm_campaign=covid19&utm_content=donate" },
 	{ name: "Atlanta, GA (Emory)", url: "http://bit.ly/donateEMcovid19" },
 	{ name: "Atlanta, GA (Food Bank)", url: "http://bit.ly/donateATLcovid19" },
 	{ name: "Austin, TX", url: "http://bit.ly/donateATXcovid19" },
+	{ name: "Boone, IA (Red Cross)", url: "https://www.redcross.org/donate/donation.html/?donamt=0" },
 	{ name: "Chicago, IL", url: "http://bit.ly/donateCILcovid19" },
+	{ name: "Chicago, IL (COVID-19 Response Fund)", url: "https://www.chicagocovid19responsefund.org/" },
+	{ name: "Chicago, IL (Feeding America)", url: "https://www.feedingamerica.org/" },
 	{ name: "Houston, TX", url: "http://bit.ly/donateHTXcovid19" },
 	{ name: "Illinois", url: "http://bit.ly/donateNILcovid19" },
+	{ name: "Lexington, KY", url: "https://bgcf.givingfuel.com/coronavirus" },
 	{ name: "Los Angeles, CA", url: "http://bit.ly/donateLAcovid19" },
 	{ name: "New York City, NY", url: "http://bit.ly/donateNYcovid19" },
+	{ name: "New York City, NY (Mount Sinai)", url: "https://giving.mountsinai.org/site/Donation2;jsessionid=00000000.app216a?idb=1183495007&df_id=2021&mfc_pref=T&2021.donation=form1&NONCE_TOKEN=7E563239AF1564122679453358A75C21&utm_campaign=flowcodecovidgift&utm_source=flowcode&set.custom.appeal1=COVIDFLOWCODE&utm_medium=flowcode" },
 	{ name: "Pittsburgh, PA", url: "http://bit.ly/donatePITcovid19" },
+	{ name: "San Francisco, CA (City and County)", url: "https://sf.gov/give-city-respond-covid-19" },
 	{ name: "Seattle, WA (University of Washington)", url: "http://bit.ly/donateWAcovid19"},
 	{ name: "Seattle, WA (Seattle Foundation)", url: "http://bit.ly/donateUWcovid19"},
+	{ name: "Washington, D.C.", url: "https://www.northwestharvest.org/" },
 	{ name: "Canada (Red Cross)", url: "http://bit.ly/donateCNDcovid19" },
 	{ name: "Canada (Fraser Valley)", url: "http://bit.ly/donateFVHcovid19" },
+	{ name: "Canada (CanadaHelps)", url: "https://www.canadahelps.org/en/cause-funds/covid-19-community-care-fund/" },
 ];
 
 const CENTRAL_AMERICA = [
@@ -64,6 +90,8 @@ const SOUTH_AMERICA = [
 	{ name: "Brazil (BSocial)", url: "http://bit.ly/donateBRcovid19" },
 	{ name: "Brazil (Fiocruz)", url: "http://bit.ly/donateFIcovid19" },
 	{ name: "Brazil (UFRGS)", url: "http://bit.ly/donateUFcovid19" },
+	{ name: "Colombia (ABACO)", url: "https://www.bancosdealimentosdecolombia.com/" },
+
 ];
 
 const AFRICA = [{ name: "Uganda", url: "http://bit.ly/donateUGcovid19" }];
