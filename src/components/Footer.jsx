@@ -39,7 +39,6 @@ function Footer() {
         </a>{" "}
         <a
           href="https://michaelcao.tech"
-          onclick="captureOutboundLink('https://michaelcao.tech'); return false;"
           rel="noopener noreferrer"
           target="_blank"
         >
