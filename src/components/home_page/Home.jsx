@@ -60,8 +60,8 @@ const NORTH_AMERICA = [
     name: "Seattle, WA (Seattle Foundation)",
     url: "http://bit.ly/donateUWcovid19",
   },
-  { name: "Canada (Red Cross)", url: "http://bit.ly/donateCNDcovid19" },
-  { name: "Canada (Fraser Valley)", url: "http://bit.ly/donateFVHcovid19" },
+  { name: "Canada (Red Cross)", url: "http://bit.ly/donateCNDcovid19", isCanada: true },
+  { name: "Canada (Fraser Valley)", url: "http://bit.ly/donateFVHcovid19", isCanada: true },
 ];
 
 const CENTRAL_AMERICA = [
@@ -104,6 +104,38 @@ const Box = (props) => {
   );
 };
 
+
+const NorthAmerica = (props) => {
+  // props: String name, List<Link> list_of_links, String className
+
+  var allCanadaLinks = []
+  var allUsaLinks = []
+
+  for (var i = 0; i < props.list_of_links.length; ++i) {
+    if (props.list_of_links[i].isCanada) {
+      // console.log(props.list_of_links[i])
+      allCanadaLinks.push(props.list_of_links[i])
+    } else {
+      // console.log(props.list_of_links[i])
+      allUsaLinks.push(props.list_of_links[i])
+    }
+  }
+
+  return (
+    <div className={`box ${props.className}`} id="box">
+        <h1> {props.name} </h1>
+        <p> <strong> USA: </strong></p>
+        {allUsaLinks.map((link) => {
+          return <Link url={link.url} name={link.name} />;
+        })}
+        <p> <strong> Canada: </strong></p>
+        {allCanadaLinks.map((link) => {
+          return <Link url={link.url} name={link.name} />;
+        })}
+    </div>
+    )
+}
+
 function Home() {
   return (
     <div className="home">
@@ -113,11 +145,12 @@ function Home() {
         <Box name="Asia" list_of_links={ASIA} className="asia" />
         <Box name="Europe" list_of_links={EUROPE} className="europe" />
 
-        <Box
-          name="North America"
-          list_of_links={NORTH_AMERICA}
-          className="northamerica"
-        />
+        <NorthAmerica
+        name="North America"
+        list_of_links={NORTH_AMERICA}
+        className="northamerica">
+        </NorthAmerica>
+
         <Box
           name="Central America"
           list_of_links={CENTRAL_AMERICA}
