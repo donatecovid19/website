@@ -23,7 +23,7 @@ const ASIA = [
   { name: "Indonesia (Dompet Dhuafa)", url: "https://donasi.dompetdhuafa.org/bersamalawancorona/" },
   { name: "Indonesia (Unicef Indonesia)", url: "http://bit.ly/donateINcovid19" },
   { name: "Korea", url: "https://www.plankorea.or.kr/news/event/view/5043" },
-  { name: "Malaysia (Vulcan Post)", url: "http://bit.ly/donateMYcovid2019" },
+  { name: "Malaysia (Masterlist)", url: "http://bit.ly/donateMYcovid2019" },
   { name: "Malayasia (Kitajagakita)", url: "https://kitajagakita.com/pages/submit-an-initiative-for-listing" },
   { name: "Malaysia (MERCY)", url: "https://www.mercy.org.my/donate/wakaf-covid19/" },
   { name: "Pakistan", url: "http://bit.ly/donatePKcovid19" },
