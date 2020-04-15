@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import ReactGA from "react-ga";
+import { Event } from "../tracking";
 
 // Template: {name:"", url:'http://bit.ly/donateFIXcovid19'},
 // TODO: Mobile responsiveness
@@ -90,8 +90,6 @@ const OCEANIA = [{ name: "Australia", url: "http://bit.ly/donateAUScovid19" }];
 
 const MIDDLE_EAST = [{ name: "UAE", url: "http://bit.ly/donateAEcovid19" }];
 
-ReactGA.initialize('UA-160829657-1');
-
 class Home extends React.Component {
     render() {
         return (
@@ -139,11 +137,7 @@ class Home extends React.Component {
 
 function Link(props) {
     function handleClick() {
-        ReactGA.event({
-            category: "Donation Link Clicked",
-            action: props.name,
-            label: "HOME_PAGE"
-        });
+        Event("Donation Link Clicked", props.name, "HOME_PAGE");
     }
 
     return (
