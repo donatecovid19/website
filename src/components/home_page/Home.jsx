@@ -27,7 +27,7 @@ const ASIA = [
   { name: "Malayasia (Kitajagakita)", url: "https://kitajagakita.com/pages/submit-an-initiative-for-listing" },
   { name: "Malaysia (MERCY)", url: "https://www.mercy.org.my/donate/wakaf-covid19/" },
   { name: "Pakistan", url: "http://bit.ly/donatePKcovid19" },
-  { name: "Philippines (Ticket2Me)", url: "http://bit.ly/donatePHcovid19" },
+  { name: "Philippines (Kaya Natin)", url: "http://bit.ly/donatePHcovid19" },
   { name: "Philippines (Masterlist)", url: "http://bit.ly/donatePHIcovid19" },
   { name: "Philippines (Project Pearls)", url: "https://www.projectpearls.org/donate/" },
   { name: "Singapore", url: "http://bit.ly/donateSGcovid19" },
