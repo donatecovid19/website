@@ -34,6 +34,14 @@ function Navigation(props) {
               </span>
             </Link>
           </button>
+          <button>
+            <Link class="nav-link" to="/form">
+              share a donation link!{" "}
+              <span role="img" aria-label="globe">
+                &#127760;
+              </span>
+            </Link>
+          </button>
         </p>
       </header>
     </div>
