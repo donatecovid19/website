@@ -20,7 +20,7 @@ function Navigation(props) {
           </button>
           <button>
             <Link className="nav-link" to="/ideas">
-              idea?{" "}
+              feedback?{" "}
               <span role="img" aria-label="light">
                 &#128161;
               </span>
