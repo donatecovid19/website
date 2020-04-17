@@ -62,8 +62,8 @@ const NORTH_AMERICA = [
   { name: "Atlanta, GA (Food Bank)", url: "http://bit.ly/donateATLcovid19" },
   { name: "Austin, TX", url: "http://bit.ly/donateATXcovid19" },
   { name: "Boone, IA", url: "https://www.redcross.org/donate/donation.html/?donamt=0" },
-  { name: "Chicago, IL (Chicago's Food Bank)", url: "http://bit.ly/donateCILcovid19" },
-  { name: "Chicago, IL (Community Fund)", url: "https://www.chicagocovid19responsefund.org/" },
+  { name: "Illinois – Chicago (Chicago's Food Bank)", url: "http://bit.ly/donateCILcovid19" },
+  { name: "Illinois | Chicago (Community Fund)", url: "https://www.chicagocovid19responsefund.org/" },
   { name: "Chicago, IL (Feeding America)", url: "https://www.feedingamerica.org/" },
   { name: "Houston, TX", url: "http://bit.ly/donateHTXcovid19" },
   { name: "Illinois", url: "http://bit.ly/donateNILcovid19" },
@@ -71,13 +71,15 @@ const NORTH_AMERICA = [
   { name: "Los Angeles, CA", url: "http://bit.ly/donateLAcovid19" },
   { name: "New York City, NY (CityMeals)", url: "http://bit.ly/donateNYcovid19" },
   { name: "New York City, NY (Mount Sinai)", url: "https://giving.mountsinai.org/site/Donation2;jsessionid=00000000.app216a?idb=1183495007&df_id=2021&mfc_pref=T&2021.donation=form1&NONCE_TOKEN=7E563239AF1564122679453358A75C21&utm_campaign=flowcodecovidgift&utm_source=flowcode&set.custom.appeal1=COVIDFLOWCODE&utm_medium=flowcode" },
+  { name: "New York City, NY (NYC)", url: "https://www1.nyc.gov/site/fund/donate/donate.page" },
   { name: "Pittsburgh, PA", url: "http://bit.ly/donatePITcovid19" },
   { name: "San Francisco, CA", url: "https://sf.gov/give-city-respond-covid-19" },
   { name: "Seattle, WA (University of Washington)", url: "http://bit.ly/donateWAcovid19" },
   { name: "Seattle, WA (Seattle Foundation)", url: "http://bit.ly/donateUWcovid19" },
   { name: "Washington, D.C.", url: "https://www.northwestharvest.org/" },
-  { name: "Canada (Red Cross)", url: "http://bit.ly/donateCNDcovid19", isCanada: true },
   { name: "Canada (CanadaHelps)", url: "https://www.canadahelps.org/en/cause-funds/covid-19-community-care-fund/", isCanada: true },
+  { name: "Canada (Food Banks)", url: "https://www.foodbankscanada.ca/COVID-19.aspx", isCanada: true },
+  { name: "Canada (Red Cross)", url: "http://bit.ly/donateCNDcovid19", isCanada: true },
 ];
 
 const CENTRAL_AMERICA = [
