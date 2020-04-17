@@ -31,7 +31,7 @@ button {
   border-radius: 20px;
   padding: 10px 20px;
   transition: 0.4s;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
 }
 
 button a {
