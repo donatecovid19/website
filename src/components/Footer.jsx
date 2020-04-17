@@ -14,45 +14,49 @@ function Footer() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Allison Yick
+          Allison
         </a>{" "}
         <a
           href="https://www.youtube.com/channel/UC9xFO-llZ2ontatfj9LtLxw"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Jack He
+          Jack
         </a>{" "}
         <a
           href="https://www.youtube.com/user/alohakatiex"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Katie Tracy
+          Katie G.
         </a>{" "}
         <a
           href="https://ykatieli.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Katie Li
+          Katie L.
         </a>{" "}
         <a
           href="https://michaelcao.tech"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Michael Cao
+          Michael
         </a>{" "}
-        <a href="/" rel="noopener noreferrer" target="_blank">
-          Mira Dhingra
+        <a
+          href="https://miradhingra.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Mira
         </a>{" "}
         <a
           href="https://www.instagram.com/sancho.syquia/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Sancho Syquia
+          Sancho
         </a>
         <p>
           Image Source:{" "}
