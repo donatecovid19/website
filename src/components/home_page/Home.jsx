@@ -167,9 +167,10 @@ const NorthAmerica = (props) => {
   );
 };
 
-function Home() {
+function Home(props) {
   return (
     <div className="home">
+      <h1>{props.test}</h1>
       <title>Donate to Fight COVID-19</title>
       <div class="grid">
         <Box name="Global" list_of_links={GLOBAL} className="global" />
