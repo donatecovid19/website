@@ -1,17 +1,11 @@
 import React from "react";
 import "./Home.css";
 import { Event } from "../tracking";
+import db from '../../backend/firebase.js'
+import { render } from "@testing-library/react";
 
-// Template: {name:"", url:'http://bit.ly/donateFIXcovid19'},
-// TODO: Mobile responsiveness
 
-const GLOBAL = [
-  { name: "Children's Hunger Fund", url: "https://bit.ly/donateCHFcovid19" },
-  { name: "Unicef", url: "https://uni.cf/2V8fODA" },
-  { name: "United Nations", url: "https://bit.ly/donateUNcovid19" },
-  { name: "United Way", url: "https://secure.unitedway.org/j/step/covid19-donate?source=landingpage&subsource=covid19&utm_source=landingpage&utm_medium=web&utm_campaign=covid19&utm_content=donate" },
-  { name: "World Health Organization", url: "http://bit.ly/donateWHO" },
-];
+// TODO: update the database with the information in the dummy constants here::: 
 
 const ASIA = [
   { name: "Afghanistan", url: "http://bit.ly/donateAFcovid19" },
@@ -167,26 +161,100 @@ const NorthAmerica = (props) => {
   );
 };
 
-function Home(props) {
-  return (
-    <div className="home">
-      <h1>{props.test}</h1>
-      <title>Donate to Fight COVID-19</title>
-      <div class="grid">
-        <Box name="Global" list_of_links={GLOBAL} className="global" />
-        <Box name="Asia" list_of_links={ASIA} className="asia" />
-        <Box name="Europe" list_of_links={EUROPE} className="europe" />
+class Home extends React.Component {
+  
+  state = {
+      global: [],
+      asia: [],
+      europe: [],
+      northAmerica: [],
+      centralAmerica: [],
+      southAmerica: [],
+      africa: [],
+      oceania: [],
+      middleEast: []
+  }
 
-        <NorthAmerica name="North America" list_of_links={NORTH_AMERICA} className="northamerica" />
-        <Box name="Central America" list_of_links={CENTRAL_AMERICA} className="centralamerica" />
-        <Box name="South America" list_of_links={SOUTH_AMERICA} className="southamerica" />
+  componentDidMount() {
+    db.collection('all_continents').get().then( snapshot => {
 
-        <Box name="Africa" list_of_links={AFRICA} className="africa" />
-        <Box name="Oceania" list_of_links={OCEANIA} className="oceania" />
-        <Box name="Middle East" list_of_links={MIDDLE_EAST} className="middleeast" />
+      var GLOBAL2 = []
+      var ASIA2 = []
+      var EUROPE2 = []
+      var NORTH_AMERICA2 = []
+      var CENTRAL_AMERICA2 = []
+      var SOUTH_AMERICA2 = []
+      var AFRICA2 = []
+      var OCEANIA2 = []
+      var MIDDLE_EAST2 = []
+
+      snapshot.forEach( doc => {
+        const data = doc.data()
+        switch (data.group) {
+          case "Global":
+            GLOBAL2 = data.links
+            break
+          case "Asia":
+            ASIA2 = data.links
+            break
+          case "Europe":
+            EUROPE2 = data.links
+            break
+          case "North_America":
+            NORTH_AMERICA2 = data.links
+            break
+          case "South_America":
+            SOUTH_AMERICA2 = data.links
+            break
+          case "Central_America":
+            CENTRAL_AMERICA2 = data.links
+          case "Africa":
+            AFRICA2 = data.links
+            break
+          case "Oceania":
+            OCEANIA2 = data.links
+            break
+          default:
+            // Middle_East
+            MIDDLE_EAST2 = data.links
+        }
+        console.log(data)
+      })
+
+      this.setState({
+        global: GLOBAL2,
+        asia: ASIA2,
+        europe: EUROPE2,
+        northAmerica: NORTH_AMERICA2,
+        centralAmerica: CENTRAL_AMERICA2,
+        southAmerica: SOUTH_AMERICA2,
+        africa: AFRICA2,
+        oceania: OCEANIA2,
+        middleEast: MIDDLE_EAST2
+      })
+
+  }).catch( error => {console.log(error)})}
+
+  render() {
+    return (
+      <div className="home">
+        <title>Donate to Fight COVID-19</title>
+        <div class="grid">
+          <Box name="Global" list_of_links={this.state.global} className="global" />
+          <Box name="Asia" list_of_links={ASIA} className="asia" />
+          <Box name="Europe" list_of_links={EUROPE} className="europe" />
+  
+          <NorthAmerica name="North America" list_of_links={NORTH_AMERICA} className="northamerica" />
+          <Box name="Central America" list_of_links={CENTRAL_AMERICA} className="centralamerica" />
+          <Box name="South America" list_of_links={SOUTH_AMERICA} className="southamerica" />
+  
+          <Box name="Africa" list_of_links={AFRICA} className="africa" />
+          <Box name="Oceania" list_of_links={OCEANIA} className="oceania" />
+          <Box name="Middle East" list_of_links={MIDDLE_EAST} className="middleeast" />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Home;
