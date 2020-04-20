@@ -19,18 +19,18 @@ function Navigation(props) {
             </Link>
           </button>
           <button>
-            <Link className="nav-link" to="/ideas">
-              feedback?{" "}
-              <span role="img" aria-label="light">
-                &#128161;
-              </span>
-            </Link>
-          </button>
-          <button>
             <Link className="nav-link" to="/form">
               share a donation link!{" "}
               <span role="img" aria-label="globe">
                 &#127760;
+              </span>
+            </Link>
+          </button>
+          <button>
+            <Link className="nav-link" to="/ideas">
+              feedback?{" "}
+              <span role="img" aria-label="light">
+                &#128161;
               </span>
             </Link>
           </button>
