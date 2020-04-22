@@ -5,8 +5,7 @@ function Home() {
     <div class="donation_form">
       <title>Donate to Fight COVID-19</title>
       <header>
-        <h1>Donate to Fight COVID-19 &hearts;</h1>
-        <p>Share how we can help your country fight COVID-19!</p>
+        <h1>Share how we can help your country fight COVID-19!</h1>
       </header>
       <form>
         <div class="group">
@@ -40,9 +39,21 @@ function Home() {
         </div>
 
         <div class="group">
+          <label for="org">Organization</label>
+          <p class="desc">*Please provide the name of the organization.</p>
+          <input
+            type="text"
+            name="org"
+            id="org"
+            class="field"
+            placeholder="Enter an organization name"
+          />
+        </div>
+
+        <div class="group">
           <label for="link">Link</label>
           <p class="desc">
-            *Please provide a direct link to a donation fund for COVID-19
+            *Please provide a direct link to a donation fund for COVID-19.
           </p>
           <input
             type="url"
