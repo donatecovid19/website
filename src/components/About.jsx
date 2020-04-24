@@ -11,7 +11,7 @@ function Home() {
       <title>Donate to Fight COVID-19</title>
       <div class="backstory">
         <br />
-        <h1>Backstory</h1> <br />
+        <h1>Backstory</h1>
         <p>
           When Cornell cancelled classes on Friday, March 13 because of
           coronavirus, I was in disbelief. My friends were still lounging
@@ -51,7 +51,7 @@ function Home() {
       <br />
       <br />
       <div class="team">
-        <h1>Our Team</h1> <br />
+        <h1>Our Team</h1>
         <div class="team-grid">
           <div class="person yick" id="person">
             <img src="img/yick.png" alt="" />
@@ -191,7 +191,7 @@ function Home() {
       <br />
       <br />
       <div class="youtube">
-        <h1>How It Started...</h1> <br />
+        <h1>How It Started...</h1>
         <br />
         <div class="video">
           <iframe
