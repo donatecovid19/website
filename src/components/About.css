@@ -1,0 +1,204 @@
+/* general */
+
+.about h1 {
+  font-size: 64px;
+  font-weight: bold;
+  max-width: 1350px;
+  text-align: left;
+  margin: auto;
+  color: #f2994a;
+}
+
+/* backstory */
+
+.backstory p {
+  margin: auto;
+  max-width: 1300px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+/* team */
+
+.team-grid {
+  display: grid;
+  margin: auto;
+  max-width: 1350px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "yick he go"
+    "li cao dhingra"
+    ". syquia .";
+}
+
+.person {
+  padding: 20px 0 60px 0;
+  margin: auto;
+}
+
+.person img {
+  width: 375px;
+  height: 375px;
+  border-radius: 20px;
+}
+
+.person .name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  color: #f2994a;
+  margin: 10px 0 0 8px;
+}
+
+.person .role {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 0 12px 8px;
+}
+
+.socials a {
+  margin: 0 8px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+
+.socials a:hover {
+  transform: scale(1.3);
+}
+
+/* alphabetized grid elements */
+
+.yick {
+  grid-area: yick;
+}
+
+.he {
+  grid-area: he;
+}
+
+.go {
+  grid-area: go;
+}
+
+.li {
+  grid-area: li;
+}
+
+.cao {
+  grid-area: cao;
+}
+
+.dhingra {
+  grid-area: dhingra;
+}
+
+.syquia {
+  grid-area: syquia;
+}
+
+/* YouTube Video */
+
+.video iframe {
+  display: block;
+  margin: auto;
+  width: 1280px;
+  height: 720px;
+}
+
+/* mobile styling */
+
+@media (max-width: 1440px) {
+  .about h1 {
+    max-width: 840px;
+  }
+
+  .backstory p {
+    max-width: 800px;
+  }
+
+  .team-grid {
+    max-width: 840px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "yick he"
+      "go li"
+      "cao dhingra"
+      "syquia .";
+  }
+
+  .video iframe {
+    width: 800px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 960px) {
+  .about h1 {
+    max-width: 400px;
+    font-size: 36px;
+  }
+
+  .backstory p {
+    max-width: 360px;
+    font-size: 14px;
+  }
+
+  .person .name {
+    font-size: 36px;
+  }
+
+  .person .role {
+    font-size: 18px;
+  }
+
+  .team-grid {
+    max-width: 400px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "yick"
+      "he"
+      "go"
+      "li"
+      "cao"
+      "dhingra"
+      "syquia";
+  }
+
+  .video iframe {
+    width: 360px;
+    height: 202.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h1 {
+    max-width: 280px;
+  }
+
+  .backstory p {
+    max-width: 260px;
+  }
+
+  .person {
+    padding: 0 0 30px 0;
+    margin: auto;
+  }
+
+  .person img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .person {
+    margin: 10px auto;
+  }
+
+  .video iframe {
+    width: 260px;
+    height: 146.25px;
+  }
+}
