@@ -1,7 +1,11 @@
+/* Poppins font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 /* global styling */
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -24,6 +28,7 @@ img {
 
 button {
   background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 24px;
   color: #f2994a;
