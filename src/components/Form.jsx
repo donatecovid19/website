@@ -1,4 +1,5 @@
 import React from "react";
+import "./Form.css";
 
 function Home() {
   return (
@@ -64,6 +65,7 @@ function Home() {
             required
           />
         </div>
+        <br />
 
         <div class="group">
           <button type="submit" class="submit-button">
