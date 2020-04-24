@@ -27,9 +27,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: repeat(3, 1fr);
   grid-template-areas:
-    "yick he go"
-    "li cao dhingra"
-    ". syquia .";
+    "go li cao"
+    "he yick dhingra"
+    "syquia . .";
 }
 
 .person {

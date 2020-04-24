@@ -53,44 +53,6 @@ function Home() {
       <div class="team">
         <h1>Our Team</h1>
         <div class="team-grid">
-          <div class="person yick" id="person">
-            <img src="img/yick.png" alt="" />
-            <h2 class="name"> Allison Yick </h2>
-            <h3 class="role"> Design </h3>
-            <div class="socials">
-              <a href="#">
-                <FaInstagram size="2em" />
-              </a>
-              <a href="#">
-                <AiOutlineLinkedin size="2.1em" />
-              </a>
-              <a href="#">
-                <AiOutlineYoutube size="2.2em" />
-              </a>
-              <a href="#">
-                <GoBrowser size="2em" />
-              </a>
-            </div>
-          </div>
-          <div class="person he" id="person">
-            <img src="img/he.png" alt="" />
-            <h2 class="name"> Jack He </h2>
-            <h3 class="role"> Development </h3>
-            <div class="socials">
-              <a href="#">
-                <FaInstagram size="2em" />
-              </a>
-              <a href="#">
-                <AiOutlineLinkedin size="2.1em" />
-              </a>
-              <a href="#">
-                <AiOutlineYoutube size="2.2em" />
-              </a>
-              <a href="#">
-                <GoBrowser size="2em" />
-              </a>
-            </div>
-          </div>
           <div class="person go" id="person">
             <img src="img/go.png" alt="" />
             <h2 class="name"> Katie Tracy </h2>
@@ -133,6 +95,44 @@ function Home() {
             <img src="img/cao.png" alt="" />
             <h2 class="name"> Michael Cao </h2>
             <h3 class="role"> Project Manager, Development</h3>
+            <div class="socials">
+              <a href="#">
+                <FaInstagram size="2em" />
+              </a>
+              <a href="#">
+                <AiOutlineLinkedin size="2.1em" />
+              </a>
+              <a href="#">
+                <AiOutlineYoutube size="2.2em" />
+              </a>
+              <a href="#">
+                <GoBrowser size="2em" />
+              </a>
+            </div>
+          </div>
+          <div class="person he" id="person">
+            <img src="img/he.png" alt="" />
+            <h2 class="name"> Jack He </h2>
+            <h3 class="role"> Development </h3>
+            <div class="socials">
+              <a href="#">
+                <FaInstagram size="2em" />
+              </a>
+              <a href="#">
+                <AiOutlineLinkedin size="2.1em" />
+              </a>
+              <a href="#">
+                <AiOutlineYoutube size="2.2em" />
+              </a>
+              <a href="#">
+                <GoBrowser size="2em" />
+              </a>
+            </div>
+          </div>
+          <div class="person yick" id="person">
+            <img src="img/yick.png" alt="" />
+            <h2 class="name"> Allison Yick </h2>
+            <h3 class="role"> Design </h3>
             <div class="socials">
               <a href="#">
                 <FaInstagram size="2em" />
