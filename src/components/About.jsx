@@ -14,7 +14,7 @@ function Home() {
       <title>Donate to Fight COVID-19</title>
       <div class="backstory">
         <br />
-        <h1>How We Started</h1>
+        <h1>A Message from Our Team</h1>
         <br />
         <p>
           <span>&emsp;</span> When Cornell cancelled classes on Friday, March 13
