@@ -11,11 +11,21 @@
 
 /* backstory */
 
-.backstory p {
+.backstory p,
+.youtube p {
   margin: auto;
   max-width: 1280px;
   text-align: justify;
   font-size: 20px;
+}
+
+/* YouTube Video */
+
+.video iframe {
+  display: block;
+  margin: auto;
+  width: 1280px;
+  height: 720px;
 }
 
 /* team */
@@ -100,15 +110,6 @@
   grid-area: syquia;
 }
 
-/* YouTube Video */
-
-.video iframe {
-  display: block;
-  margin: auto;
-  width: 1280px;
-  height: 720px;
-}
-
 /* mobile styling */
 
 @media (max-width: 1440px) {
@@ -116,7 +117,8 @@
     max-width: 840px;
   }
 
-  .backstory p {
+  .backstory p,
+  .youtube p {
     max-width: 840px;
   }
 
@@ -139,20 +141,21 @@
 @media (max-width: 960px) {
   .about h1 {
     max-width: 400px;
-    font-size: 36px;
+    font-size: 32px;
   }
 
-  .backstory p {
+  .backstory p,
+  .youtube p {
     max-width: 400px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .person .name {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .person .role {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .team-grid {
@@ -179,7 +182,8 @@
     max-width: 280px;
   }
 
-  .backstory p {
+  .backstory p,
+  .youtube p {
     max-width: 280px;
   }
 
