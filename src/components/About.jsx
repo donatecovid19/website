@@ -2,8 +2,10 @@ import React from "react";
 import "./About.css";
 import { Link, withRouter } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
+import { FiTwitter } from "react-icons/fi";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineYoutube } from "react-icons/ai";
+import { AiOutlineFacebook } from "react-icons/ai";
 import { GoBrowser } from "react-icons/go";
 
 function Home() {
@@ -63,17 +65,26 @@ function Home() {
             <h2 class="name"> Katie Tracy </h2>
             <h3 class="role"> Founder, Project Manager </h3>
             <div class="socials">
-              <a href="#">
+              <a href="https://www.instagram.com/alohakatiex/" target="_blank">
                 <FaInstagram size="2em" />
               </a>
-              <a href="#">
-                <AiOutlineLinkedin size="2.1em" />
+              <a href="https://www.facebook.com/AlohaKatieX/" target="_blank">
+                <AiOutlineFacebook size="2.1em" />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/alohakatiex" target="_blank">
+                <FiTwitter size="2em" />
+              </a>
+              <a
+                href="https://www.youtube.com/user/alohakatiex"
+                target="_blank"
+              >
                 <AiOutlineYoutube size="2.2em" />
               </a>
-              <a href="#">
-                <GoBrowser size="2em" />
+              <a
+                href="https://www.linkedin.com/in/katie-tracy/"
+                target="_blank"
+              >
+                <AiOutlineLinkedin size="2.1em" />
               </a>
             </div>
           </div>
@@ -224,7 +235,7 @@ function Home() {
           please share them with us{" "}
           <Link className="nav-link" to="/ideas">
             here
-          </Link>{" "}
+          </Link>
           !
         </p>
       </div>
