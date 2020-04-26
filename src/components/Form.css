@@ -8,8 +8,24 @@
 label {
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 24px;
   margin-bottom: 0.5rem;
+}
+
+#region {
+  color: #f4a0a5;
+}
+
+#country {
+  color: #9eb1e1;
+}
+
+#org {
+  color: #9ed1e1;
+}
+
+#link {
+  color: #abcf8f;
 }
 
 header {
@@ -20,14 +36,16 @@ header {
 
 header h1 {
   font-size: 36px;
+  color: rgba(242, 153, 74, 0.9);
 }
 
 .desc {
   font-size: 0.9rem;
+  color: #818181;
 }
 
 .donation_form {
-  border-radius: 50px;
+  border-radius: 40px;
   border: 5px solid #f2994a;
   width: 720px;
   margin: 5rem auto;
