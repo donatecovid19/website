@@ -1,7 +1,11 @@
+/* Poppins font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 /* global styling */
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -24,6 +28,7 @@ img {
 
 button {
   background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 24px;
   color: #f2994a;
@@ -31,7 +36,7 @@ button {
   border-radius: 20px;
   padding: 10px 20px;
   transition: 0.4s;
-  margin: 0 10px 10px 0;
+  margin-right: 10px;
 }
 
 button a {
@@ -46,7 +51,6 @@ button:hover {
 }
 
 .nav {
-  display: center;
   margin: 2em auto 2em;
   text-align: center;
 }
@@ -75,7 +79,7 @@ footer {
   padding: 15px;
 }
 
-/* mobile styling */
+/*mobile styling */
 
 @media (max-width: 1600px) {
   .grid {
@@ -111,9 +115,31 @@ footer {
   }
 }
 
+@media (max-width: 740px) {
+  .donation_form {
+    max-width: 450px;
+  }
+}
+
 @media (max-width: 480px) {
   img {
     width: 300px;
+  }
+
+  .donation_form {
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 3px solid #f2994a;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 14px;
+    font-style: italic;
   }
 
   .box {
@@ -123,5 +149,7 @@ footer {
   button {
     font-size: 18px;
     padding: 5px 10px;
+    display: block;
+    margin: 10px auto;
   }
 }
