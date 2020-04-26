@@ -14,7 +14,7 @@
 
 .box {
   font-size: 24px;
-  height: 280px;
+  height: 340px;
   padding: 30px;
   margin: 15px;
   background-color: white;
@@ -46,18 +46,19 @@
 }
 
 .asia {
-  color: #deba04;
+  color: #e0be14;
   background-color: #f8e16b;
   grid-area: asia;
 }
 
 .asia:hover {
-  box-shadow: 10px 10px 0px #c4a400;
+  box-shadow: 10px 10px 0px #e0be14;
 }
 
 .centralamerica {
   color: #e78b36;
   background-color: #ffbb7c;
+  grid-area: camerica;
 }
 
 .centralamerica:hover {
