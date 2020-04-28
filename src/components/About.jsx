@@ -9,7 +9,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { GoBrowser } from "react-icons/go";
 
-function Home() {
+function About() {
   return (
     <div class="about">
       <title>Donate to Fight COVID-19</title>
@@ -163,6 +163,13 @@ function Home() {
               >
                 <GoBrowser size="2em" />
               </a>
+              <a
+                href="https://github.com/mcao"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <AiOutlineGithub size="2.1em" />
+              </a>
             </div>
           </div>
           <div class="person he" id="person">
@@ -310,4 +317,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, withRouter } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,9 +10,9 @@ function Footer() {
           &#129505;
         </span>{" "}
         by{" "}
-        <a href="/about" rel="noopener noreferrer">
+        <Link className="nav-link" to="/about">
           our team
-        </a>
+        </Link>
         <p>
           Image Source:{" "}
           <a
@@ -27,4 +28,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default withRouter(Footer);
