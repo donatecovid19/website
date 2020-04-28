@@ -3,6 +3,7 @@ import "./About.css";
 import { Link, withRouter } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
+import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
@@ -63,7 +64,7 @@ function Home() {
           <div class="person go" id="person">
             <img src="img/go.png" alt="" />
             <h2 class="name"> Katie Tracy </h2>
-            <h3 class="role"> Founder, Project Manager </h3>
+            <h4 class="role"> Founder, Project Manager </h4>
             <div class="socials">
               <a href="https://www.instagram.com/alohakatiex/" target="_blank">
                 <FaInstagram size="2em" />
@@ -91,18 +92,15 @@ function Home() {
           <div class="person li" id="person">
             <img src="img/li.png" alt="" />
             <h2 class="name"> Katie Li </h2>
-            <h3 class="role"> Design, Project Manager</h3>
+            <h4 class="role"> Design, Project Manager</h4>
             <div class="socials">
-              <a href="#">
+              <a href="https://www.instagram.com/ykatieli/">
                 <FaInstagram size="2em" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ykatieli/">
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="#">
-                <AiOutlineYoutube size="2.2em" />
-              </a>
-              <a href="#">
+              <a href="https://ykatieli.com/">
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -110,18 +108,15 @@ function Home() {
           <div class="person cao" id="person">
             <img src="img/cao.png" alt="" />
             <h2 class="name"> Michael Cao </h2>
-            <h3 class="role"> Development, Project Manager</h3>
+            <h4 class="role"> Development, Project Manager</h4>
             <div class="socials">
-              <a href="#">
+              <a href="https://www.instagram.com/mikexcao/">
                 <FaInstagram size="2em" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/michaelcao18">
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="#">
-                <AiOutlineYoutube size="2.2em" />
-              </a>
-              <a href="#">
+              <a href="https://michaelcao.tech/">
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -129,18 +124,18 @@ function Home() {
           <div class="person he" id="person">
             <img src="img/he.png" alt="" />
             <h2 class="name"> Jack He </h2>
-            <h3 class="role"> Development </h3>
+            <h4 class="role"> Development </h4>
             <div class="socials">
-              <a href="#">
+              <a href="https://www.instagram.com/jack_he2001/">
                 <FaInstagram size="2em" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/jack-he-845587161/">
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com/channel/UC9xFO-llZ2ontatfj9LtLxw">
                 <AiOutlineYoutube size="2.2em" />
               </a>
-              <a href="#">
+              <a href="https://jackhe.codes/">
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -148,18 +143,12 @@ function Home() {
           <div class="person yick" id="person">
             <img src="img/yick.png" alt="" />
             <h2 class="name"> Allison Yick </h2>
-            <h3 class="role"> Design </h3>
+            <h4 class="role"> Design </h4>
             <div class="socials">
-              <a href="#">
-                <FaInstagram size="2em" />
-              </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/allisonyick/">
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="#">
-                <AiOutlineYoutube size="2.2em" />
-              </a>
-              <a href="#">
+              <a href="https://allisonyick.myportfolio.com/">
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -167,18 +156,15 @@ function Home() {
           <div class="person dhingra" id="person">
             <img src="img/dhingra.png" alt="" />
             <h2 class="name"> Mira Dhingra </h2>
-            <h3 class="role"> Design </h3>
+            <h4 class="role"> Design </h4>
             <div class="socials">
-              <a href="#">
+              <a href="https://www.instagram.com/blurrymira/">
                 <FaInstagram size="2em" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/miradhingra/">
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="#">
-                <AiOutlineYoutube size="2.2em" />
-              </a>
-              <a href="#">
+              <a href="https://miradhingra.com/">
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -186,19 +172,13 @@ function Home() {
           <div class="person syquia" id="person">
             <img src="img/syquia.png" alt="" />
             <h2 class="name"> Sancho Syquia </h2>
-            <h3 class="role"> Development </h3>
+            <h4 class="role"> Development </h4>
             <div class="socials">
-              <a href="#">
+              <a href="https://www.instagram.com/sancho.syquia/">
                 <FaInstagram size="2em" />
               </a>
-              <a href="#">
-                <AiOutlineLinkedin size="2.1em" />
-              </a>
-              <a href="#">
-                <AiOutlineYoutube size="2.2em" />
-              </a>
-              <a href="#">
-                <GoBrowser size="2em" />
+              <a href="https://github.com/Deadify">
+                <AiOutlineGithub size="2.1em" />
               </a>
             </div>
           </div>
