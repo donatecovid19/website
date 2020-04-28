@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { AiOutlineGithub } from "react-icons/ai";
@@ -46,9 +46,15 @@ function Home() {
           from a sheltered place. We are not powerless – we are powerful,
           especially from the quarantines of our rooms. Let’s do our part to
           fight COVID-19 and join the virtual frontlines together.{" "}
-          <span>&#x1f9e1;</span>
-          <span>&#x1f44a;</span>
-          <span>&#x1F30F;</span>
+          <span role="img" aria-label="heart">
+            &#x1f9e1;
+          </span>
+          <span role="img" aria-label="fistbump">
+            &#x1f44a;
+          </span>
+          <span role="img" aria-label="earth">
+            &#x1F30F;
+          </span>
         </p>
         <br />
         <p>– Katie Tracy</p>
@@ -66,24 +72,38 @@ function Home() {
             <h2 class="name"> Katie Tracy </h2>
             <h4 class="role"> Founder, Project Manager </h4>
             <div class="socials">
-              <a href="https://www.instagram.com/alohakatiex/" target="_blank">
+              <a
+                href="https://www.instagram.com/alohakatiex/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FaInstagram size="2em" />
               </a>
-              <a href="https://www.facebook.com/AlohaKatieX/" target="_blank">
+              <a
+                href="https://www.facebook.com/AlohaKatieX/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <AiOutlineFacebook size="2.1em" />
               </a>
-              <a href="https://twitter.com/alohakatiex" target="_blank">
+              <a
+                href="https://twitter.com/alohakatiex"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FiTwitter size="2em" />
               </a>
               <a
                 href="https://www.youtube.com/user/alohakatiex"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <AiOutlineYoutube size="2.2em" />
               </a>
               <a
                 href="https://www.linkedin.com/in/katie-tracy/"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 <AiOutlineLinkedin size="2.1em" />
               </a>
@@ -94,13 +114,25 @@ function Home() {
             <h2 class="name"> Katie Li </h2>
             <h4 class="role"> Design, Project Manager</h4>
             <div class="socials">
-              <a href="https://www.instagram.com/ykatieli/">
+              <a
+                href="https://www.instagram.com/ykatieli/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FaInstagram size="2em" />
               </a>
-              <a href="https://www.linkedin.com/in/ykatieli/">
+              <a
+                href="https://www.linkedin.com/in/ykatieli/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="https://ykatieli.com/">
+              <a
+                href="https://ykatieli.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -110,13 +142,25 @@ function Home() {
             <h2 class="name"> Michael Cao </h2>
             <h4 class="role"> Development, Project Manager</h4>
             <div class="socials">
-              <a href="https://www.instagram.com/mikexcao/">
+              <a
+                href="https://www.instagram.com/mikexcao/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FaInstagram size="2em" />
               </a>
-              <a href="https://www.linkedin.com/in/michaelcao18">
+              <a
+                href="https://www.linkedin.com/in/michaelcao18"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="https://michaelcao.tech/">
+              <a
+                href="https://michaelcao.tech/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -126,13 +170,25 @@ function Home() {
             <h2 class="name"> Jack He </h2>
             <h4 class="role"> Development </h4>
             <div class="socials">
-              <a href="https://www.instagram.com/jack_he2001/">
+              <a
+                href="https://www.instagram.com/jack_he2001/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FaInstagram size="2em" />
               </a>
-              <a href="https://www.linkedin.com/in/jack-he-845587161/">
+              <a
+                href="https://www.linkedin.com/in/jack-he-845587161/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="https://www.youtube.com/channel/UC9xFO-llZ2ontatfj9LtLxw">
+              <a
+                href="https://www.youtube.com/channel/UC9xFO-llZ2ontatfj9LtLxw"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <AiOutlineYoutube size="2.2em" />
               </a>
               <a href="https://jackhe.codes/">
@@ -145,10 +201,18 @@ function Home() {
             <h2 class="name"> Allison Yick </h2>
             <h4 class="role"> Design </h4>
             <div class="socials">
-              <a href="https://www.linkedin.com/in/allisonyick/">
+              <a
+                href="https://www.linkedin.com/in/allisonyick/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="https://allisonyick.myportfolio.com/">
+              <a
+                href="https://allisonyick.myportfolio.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -158,13 +222,25 @@ function Home() {
             <h2 class="name"> Mira Dhingra </h2>
             <h4 class="role"> Design </h4>
             <div class="socials">
-              <a href="https://www.instagram.com/blurrymira/">
+              <a
+                href="https://www.instagram.com/blurrymira/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FaInstagram size="2em" />
               </a>
-              <a href="https://www.linkedin.com/in/miradhingra/">
+              <a
+                href="https://www.linkedin.com/in/miradhingra/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <AiOutlineLinkedin size="2.1em" />
               </a>
-              <a href="https://miradhingra.com/">
+              <a
+                href="https://miradhingra.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <GoBrowser size="2em" />
               </a>
             </div>
@@ -174,10 +250,18 @@ function Home() {
             <h2 class="name"> Sancho Syquia </h2>
             <h4 class="role"> Development </h4>
             <div class="socials">
-              <a href="https://www.instagram.com/sancho.syquia/">
+              <a
+                href="https://www.instagram.com/sancho.syquia/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <FaInstagram size="2em" />
               </a>
-              <a href="https://github.com/Deadify">
+              <a
+                href="https://github.com/Deadify"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <AiOutlineGithub size="2.1em" />
               </a>
             </div>
@@ -192,6 +276,7 @@ function Home() {
         <br />
         <div class="video">
           <iframe
+            title="website-video"
             src="https://www.youtube.com/embed/ib2tSDDWO_w"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
