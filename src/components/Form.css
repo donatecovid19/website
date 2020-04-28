@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+h3 {
+  font-size: 1.2rem;
+  color: #818181;
+}
+
 label {
   display: flex;
   align-items: center;
@@ -12,11 +17,13 @@ label {
   margin-bottom: 0.5rem;
 }
 
-#region {
+#region,
+#ideas {
   color: #f4a0a5;
 }
 
-#country {
+#country,
+#contact {
   color: #9eb1e1;
 }
 
@@ -26,6 +33,15 @@ label {
 
 #link {
   color: #abcf8f;
+}
+
+.thanks {
+  text-align: center;
+  color: rgba(242, 153, 74, 0.9);
+}
+
+.thanks h2 {
+  font-size: 24px;
 }
 
 header {
@@ -96,12 +112,23 @@ header h1 {
     border: 3px solid #f2994a;
   }
 
-  header h1 {
-    font-size: 30px;
+  .thanks {
+    text-align: left;
   }
 
-  header p {
+  .thanks h2 {
+    font-size: 20px;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .desc {
     font-size: 14px;
-    font-style: italic;
   }
 }
