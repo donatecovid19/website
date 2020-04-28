@@ -8,9 +8,9 @@ function Footer() {
         <span role="img" aria-label="heart">
           &#129505;
         </span>{" "}
-        by our{" "}
+        by{" "}
         <a href="/about" rel="noopener noreferrer">
-          team
+          our team
         </a>
         <p>
           Image Source:{" "}
