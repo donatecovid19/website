@@ -4,7 +4,6 @@ import { Event } from "../tracking";
 import db from '../../backend/firebase.js'
 import { render } from "@testing-library/react";
 
-
 // TODO: update the database with the information in the dummy constants :::
 
 const Link = (props) => {

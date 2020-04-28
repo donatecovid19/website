@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, withRouter } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,51 +10,9 @@ function Footer() {
           &#129505;
         </span>{" "}
         by{" "}
-        <a
-          href="https://allisonyick.myportfolio.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Allison Yick
-        </a>{" "}
-        <a
-          href="https://www.youtube.com/channel/UC9xFO-llZ2ontatfj9LtLxw"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Jack He
-        </a>{" "}
-        <a
-          href="https://www.youtube.com/user/alohakatiex"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Katie Tracy
-        </a>{" "}
-        <a
-          href="https://ykatieli.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Katie Li
-        </a>{" "}
-        <a
-          href="https://michaelcao.tech"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Michael Cao
-        </a>{" "}
-        <a href="/" rel="noopener noreferrer" target="_blank">
-          Mira Dhingra
-        </a>{" "}
-        <a
-          href="https://www.instagram.com/sancho.syquia/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Sancho Syquia
-        </a>
+        <Link className="nav-link" to="/about">
+          our team
+        </Link>
         <p>
           Image Source:{" "}
           <a
@@ -69,4 +28,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default withRouter(Footer);
