@@ -9,7 +9,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { GoBrowser } from "react-icons/go";
 
-function Home() {
+function About() {
   return (
     <div class="about">
       <title>Donate to Fight COVID-19</title>
@@ -310,4 +310,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;
