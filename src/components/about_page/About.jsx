@@ -203,6 +203,13 @@ function About() {
                  rel="noreferrer noopener">
                 <GoBrowser size="2em" />
               </a>
+              <a
+                href="https://github.com/ProjectsByJackHe"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <AiOutlineGithub size="2.1em" />
+              </a>
             </div>
           </div>
           <div class="person yick" id="person">
