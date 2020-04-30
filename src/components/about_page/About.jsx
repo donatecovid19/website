@@ -178,7 +178,7 @@ function About() {
             <h4 class="role"> Development, Lead Engineer </h4>
             <div class="socials">
               <a
-                href="https://www.instagram.com/jack_he2001/"
+                href="https://www.instagram.com/jack_he_hd/"
                 target="_blank"
                 rel="noreferrer noopener"
               >
