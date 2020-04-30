@@ -1,6 +1,5 @@
 import React from "react";
 import { Navigation, Footer, Main } from "./components";
-
 import { PageView, initGA } from "./components/tracking";
 
 class App extends React.Component {
