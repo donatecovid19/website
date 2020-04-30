@@ -1,7 +1,7 @@
 import * as firebase from 'firebase'
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  apiKey: "AIzaSyCuLBS_S0YiPGRPeQzOpnVaqCDD62wJg3I",
   authDomain: "fight-covid-19-team.firebaseapp.com",
   databaseURL: "https://fight-covid-19-team.firebaseio.com",
   projectId: "fight-covid-19-team",
