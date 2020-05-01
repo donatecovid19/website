@@ -5,7 +5,7 @@ function Home() {
   return (
     <div class="donation_form">
       <title>Donate to Fight COVID-19</title>
-      <header>
+      <header class="form">
         <h1>Share how we can help your country fight COVID-19!</h1>
       </header>
       <form>
