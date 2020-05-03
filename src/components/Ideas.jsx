@@ -46,6 +46,7 @@ function Home() {
             name="idea"
             class="field"
             placeholder="Enter any idea"
+            ref = {ideaRef}
           />
         </div>
 
@@ -62,6 +63,7 @@ function Home() {
             name="contact"
             class="field"
             placeholder="Enter a contact method"
+            ref = {contactRef}
           />
         </div>
 
