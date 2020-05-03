@@ -36,7 +36,7 @@ function Home() {
       <header class="form">
         <h1>Share any ideas to help us improve our website!</h1>
       </header>
-      <form>
+      <form onSubmit={onSubmitHandler}>
         <div class="group">
           <label id="ideas" for="ideas">
             What's up?
@@ -46,6 +46,7 @@ function Home() {
             name="idea"
             class="field"
             placeholder="Enter any idea"
+            ref = {ideaRef}
           />
         </div>
 
@@ -62,6 +63,7 @@ function Home() {
             name="contact"
             class="field"
             placeholder="Enter a contact method"
+            ref = {contactRef}
           />
         </div>
 
