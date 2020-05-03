@@ -4,8 +4,6 @@ import "./Form.css";
 
 const uuidv4 = require("uuid/v4")
 
-
-
 function Home() {
 
   const regionRef = React.createRef()
