@@ -8,22 +8,18 @@ const uuidv4 = require("uuid/v4")
 
 function Home() {
 
-  const regionRef = React.createRef()
-  const countryRef = React.createRef()
-  const organizationRef = React.createRef()
-  const linkRef = React.createRef()
+  const ideaRef = React.createRef()
+  const contactRef = React.createRef()
 
   const onSubmitHandler = (event) => {
     event.preventDefault()
     // access input fields: ...ref.current.value
     // post data to firebase firestore
 
-    const uniqueId = countryRef.current.value + "_" + uuidv4()
-    db.collection("donation-links").doc(uniqueId).set({
-      country: countryRef.current.value,
-      url: linkRef.current.value,
-      organization: organizationRef.current.value,
-      region: regionRef.current.value
+    const uniqueId = ideaRef.current.value + "_" + uuidv4()
+    db.collection("ideas").doc(uniqueId).set({
+      idea: ideaRef.current.value,
+      contact: contactRef.current.value
     }).then(() => {
       console.log("success")
       alert("SUCCESS! Your suggestion is noted!")
@@ -47,7 +43,7 @@ function Home() {
           </label>
           <input
             type="text"
-            name="country"
+            name="idea"
             class="field"
             placeholder="Enter any idea"
           />
