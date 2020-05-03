@@ -1,7 +1,12 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
-function Footer() {
+function Footer() { 
+
+  const goToTop = () => {
+    window.location.href = "#top"
+  }
+
   return (
     <div className="footer">
       <footer>
@@ -10,7 +15,7 @@ function Footer() {
           &#129505;
         </span>{" "}
         by{" "}
-        <Link className="nav-link" to="/about">
+        <Link className="nav-link" to="/about" onClick = {goToTop}>
           our team
         </Link>
         <p>

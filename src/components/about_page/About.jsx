@@ -175,10 +175,10 @@ function About() {
           <div class="person he" id="person">
             <img src="img/he.png" alt="" />
             <h2 class="name"> Jack He </h2>
-            <h4 class="role"> Development </h4>
+            <h4 class="role"> Development, Lead Engineer </h4>
             <div class="socials">
               <a
-                href="https://www.instagram.com/jack_he2001/"
+                href="https://www.instagram.com/jack_he_hd/"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -198,8 +198,17 @@ function About() {
               >
                 <AiOutlineYoutube size="2.2em" />
               </a>
-              <a href="https://jackhe.codes/">
+              <a href="https://jackhe.codes/"
+                 target="_blank"
+                 rel="noreferrer noopener">
                 <GoBrowser size="2em" />
+              </a>
+              <a
+                href="https://github.com/ProjectsByJackHe"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <AiOutlineGithub size="2.1em" />
               </a>
             </div>
           </div>

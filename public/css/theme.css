@@ -1,15 +1,17 @@
 /* Poppins font */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /* global styling */
 
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
   margin: -10px 0px 0px 0px;
+  font-weight: 600;
 }
 
 iframe {
@@ -29,8 +31,8 @@ img {
 button {
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
   font-size: 24px;
+  font-weight: 500;
   color: #f2994a;
   border: 2px solid #f2994a;
   border-radius: 20px;

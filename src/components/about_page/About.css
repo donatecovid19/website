@@ -1,8 +1,9 @@
 /* general */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 .about h1 {
   font-size: 48px;
-  font-weight: bold;
   max-width: 760px;
   text-align: left;
   margin: auto;
@@ -55,15 +56,15 @@
 
 .person .name {
   font-style: normal;
-  font-weight: bold;
   font-size: 28px;
+  font-weight: 600;
   color: #f2994a;
   margin: 10px 0 0 0;
 }
 
 .person .role {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   margin: 0 0 12px 0;
 }
@@ -193,7 +194,7 @@
 
 /* Most Phones */
 
-@media (max-width: 420px) {
+@media (max-width: 720px) {
   .team-grid {
     max-width: 340px;
     grid-template-columns: 1fr;

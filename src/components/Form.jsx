@@ -1,19 +1,49 @@
 import React from "react";
+import db from '../backend/firebase.js'
 import "./Form.css";
 
+const uuidv4 = require("uuid/v4")
+
 function Home() {
+
+  const regionRef = React.createRef()
+  const countryRef = React.createRef()
+  const organizationRef = React.createRef()
+  const linkRef = React.createRef()
+
+  const onSubmitHandler = (event) => {
+    event.preventDefault()
+    // access input fields: ...ref.current.value
+    // post data to firebase firestore
+
+    const uniqueId = countryRef.current.value + "_" + uuidv4()
+    db.collection("donation-links").doc(uniqueId).set({
+      country: countryRef.current.value,
+      url: linkRef.current.value,
+      organization: organizationRef.current.value,
+      region: regionRef.current.value
+    }).then(() => {
+      console.log("success")
+      alert("SUCCESS! Your suggestion is noted!")
+      window.location.reload()
+    }).catch((error) => {
+      alert(error)
+      window.location.reload()
+    })
+  }
+
   return (
     <div class="donation_form">
       <title>Donate to Fight COVID-19</title>
       <header class="form">
         <h1>Share how we can help your country fight COVID-19!</h1>
       </header>
-      <form>
+      <form onSubmit={onSubmitHandler}>
         <div class="group">
           <label id="region" for="region">
             Region
           </label>
-          <select name="region" class="field" required>
+          <select name="region" class="field" required ref = {regionRef}>
             <option disabled selected value>
               Select an option
             </option>
@@ -28,7 +58,6 @@ function Home() {
             <option value="south_america">South America</option>
           </select>
         </div>
-
         <div class="group">
           <label id="country" for="country">
             Country
@@ -39,6 +68,7 @@ function Home() {
             name="country"
             class="field"
             placeholder="Enter a country"
+            ref = {countryRef}
           />
         </div>
 
@@ -52,6 +82,7 @@ function Home() {
             name="org"
             class="field"
             placeholder="Enter an organization name"
+            ref = {organizationRef}
           />
         </div>
 
@@ -68,10 +99,10 @@ function Home() {
             class="field"
             placeholder="Enter a link"
             required
+            ref = {linkRef}
           />
         </div>
         <br />
-
         <div class="group">
           <button type="submit" class="submit-button">
             Submit
@@ -81,5 +112,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
