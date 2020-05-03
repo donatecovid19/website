@@ -36,7 +36,7 @@ function Home() {
       <header class="form">
         <h1>Share any ideas to help us improve our website!</h1>
       </header>
-      <form>
+      <form onSubmit={onSubmitHandler}>
         <div class="group">
           <label id="ideas" for="ideas">
             What's up?
