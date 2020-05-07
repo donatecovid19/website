@@ -17,7 +17,7 @@ function Home() {
     // post data to firebase firestore
 
     const uniqueId = countryRef.current.value + "_" + uuidv4()
-    db.collection("donation-links").doc(uniqueId).set({
+    db.collection("submitted_donation_links").doc(uniqueId).set({
       country: countryRef.current.value,
       url: linkRef.current.value,
       organization: organizationRef.current.value,

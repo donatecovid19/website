@@ -12,6 +12,18 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig)
 
+// const email = "dummy@test.com"
+// const password = "1234567"
+
+// firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+//   // Handle Errors here.
+//   var errorCode = error.code;
+//   var errorMessage = error.message;
+//   console.log("ERROR!")
+//   console.log(errorMessage)
+//   console.log(errorCode)
+// })
+
 const db = firebase.firestore()
 
 // var allContinentalData = ["abcd"]
