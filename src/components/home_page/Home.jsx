@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Event } from "../tracking";
 import db from '../../backend/firebase.js'
-
+import alphabetSort from '../AlphabetSort'
 // import { render } from "@testing-library/react"; // why is this imported?
 
 // TODO: update the database with the information in the dummy constants :::
@@ -107,32 +107,32 @@ class Home extends React.Component {
         const data = doc.data()
         switch (data.group) {
           case "Global":
-            GLOBAL2 = data.links
+            GLOBAL2 = alphabetSort(data.links)
             break
           case "Asia":
-            ASIA2 = data.links
+            ASIA2 = alphabetSort(data.links)
             break
           case "Europe":
-            EUROPE2 = data.links
+            EUROPE2 = alphabetSort(data.links)
             break
           case "North_America":
-            NORTH_AMERICA2 = data.links
+            NORTH_AMERICA2 = alphabetSort(data.links)
             break
           case "South_America":
-            SOUTH_AMERICA2 = data.links
+            SOUTH_AMERICA2 = alphabetSort(data.links)
             break
           case "Central_America":
-            CENTRAL_AMERICA2 = data.links
+            CENTRAL_AMERICA2 = alphabetSort(data.links)
             break
           case "Africa":
-            AFRICA2 = data.links
+            AFRICA2 = alphabetSort(data.links)
             break
           case "Oceania":
-            OCEANIA2 = data.links
+            OCEANIA2 = alphabetSort(data.links)
             break
           default:
             // Middle_East
-            MIDDLE_EAST2 = data.links
+            MIDDLE_EAST2 = alphabetSort(data.links)
         }
         console.log(data)
       })
