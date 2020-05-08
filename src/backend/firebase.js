@@ -12,17 +12,23 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig)
 
-// const email = "dummy@test.com"
-// const password = "1234567"
+const email = process.env.REACT_APP_EMAIL
+const password = process.env.REACT_APP_PASSWORD
 
-// firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-//   // Handle Errors here.
-//   var errorCode = error.code;
-//   var errorMessage = error.message;
-//   console.log("ERROR!")
-//   console.log(errorMessage)
-//   console.log(errorCode)
-// })
+
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  console.log("ERROR!")
+  console.log(errorMessage)
+  console.log(errorCode)
+})
+// firebase.auth().signOut().then(function() {
+//   // Sign-out successful.
+// }).catch(function(error) {
+//   // An error happened.
+// });
 
 const db = firebase.firestore()
 
