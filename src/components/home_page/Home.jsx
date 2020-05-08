@@ -107,46 +107,46 @@ class Home extends React.Component {
         const data = doc.data()
         switch (data.group) {
           case "Global":
-            GLOBAL2 = data.links
+            GLOBAL2 = alphabetSort(data.links)
             break
           case "Asia":
-            ASIA2 = data.links
+            ASIA2 = alphabetSort(data.links)
             break
           case "Europe":
-            EUROPE2 = data.links
+            EUROPE2 = alphabetSort(data.links)
             break
           case "North_America":
-            NORTH_AMERICA2 = data.links
+            NORTH_AMERICA2 = alphabetSort(data.links)
             break
           case "South_America":
-            SOUTH_AMERICA2 = data.links
+            SOUTH_AMERICA2 = alphabetSort(data.links)
             break
           case "Central_America":
-            CENTRAL_AMERICA2 = data.links
+            CENTRAL_AMERICA2 = alphabetSort(data.links)
             break
           case "Africa":
-            AFRICA2 = data.links
+            AFRICA2 = alphabetSort(data.links)
             break
           case "Oceania":
-            OCEANIA2 = data.links
+            OCEANIA2 = alphabetSort(data.links)
             break
           default:
             // Middle_East
-            MIDDLE_EAST2 = data.links
+            MIDDLE_EAST2 = alphabetSort(data.links)
         }
         console.log(data)
       })
 
       this.setState({
-        global: alphabetSort(GLOBAL2),
-        asia: alphabetSort(ASIA2),
-        europe: alphabetSort(EUROPE2),
-        northAmerica: alphabetSort(NORTH_AMERICA2),
-        centralAmerica: alphabetSort(CENTRAL_AMERICA2),
-        southAmerica: alphabetSort(SOUTH_AMERICA2),
-        africa: alphabetSort(AFRICA2),
-        oceania: alphabetSort(OCEANIA2),
-        middleEast: alphabetSort(MIDDLE_EAST2)
+        global: GLOBAL2,
+        asia: ASIA2,
+        europe: EUROPE2,
+        northAmerica: NORTH_AMERICA2,
+        centralAmerica: CENTRAL_AMERICA2,
+        southAmerica: SOUTH_AMERICA2,
+        africa: AFRICA2,
+        oceania: OCEANIA2,
+        middleEast: MIDDLE_EAST2
       })
 
   }).catch( error => {console.log(error)})}
