@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Event } from "../tracking";
 import db from '../../backend/firebase.js'
-
+import alphabetSort from '../AlphabetSort'
 // import { render } from "@testing-library/react"; // why is this imported?
 
 // TODO: update the database with the information in the dummy constants :::
@@ -138,15 +138,15 @@ class Home extends React.Component {
       })
 
       this.setState({
-        global: GLOBAL2,
-        asia: ASIA2,
-        europe: EUROPE2,
-        northAmerica: NORTH_AMERICA2,
-        centralAmerica: CENTRAL_AMERICA2,
-        southAmerica: SOUTH_AMERICA2,
-        africa: AFRICA2,
-        oceania: OCEANIA2,
-        middleEast: MIDDLE_EAST2
+        global: alphabetSort(GLOBAL2),
+        asia: alphabetSort(ASIA2),
+        europe: alphabetSort(EUROPE2),
+        northAmerica: alphabetSort(NORTH_AMERICA2),
+        centralAmerica: alphabetSort(CENTRAL_AMERICA2),
+        southAmerica: alphabetSort(SOUTH_AMERICA2),
+        africa: alphabetSort(AFRICA2),
+        oceania: alphabetSort(OCEANIA2),
+        middleEast: alphabetSort(MIDDLE_EAST2)
       })
 
   }).catch( error => {console.log(error)})}
