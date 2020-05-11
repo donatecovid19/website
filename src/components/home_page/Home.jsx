@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
 import { Event } from "../tracking";
-import db from '../../backend/firebase.js'
-import alphabetSort from '../AlphabetSort'
+import db from "../../backend/firebase.js";
+
 // import { render } from "@testing-library/react"; // why is this imported?
 
 // TODO: update the database with the information in the dummy constants :::
@@ -77,96 +77,246 @@ const NorthAmerica = (props) => {
 };
 
 class Home extends React.Component {
-  
   state = {
-      global: [],
-      asia: [],
-      europe: [],
-      northAmerica: [],
-      centralAmerica: [],
-      southAmerica: [],
-      africa: [],
-      oceania: [],
-      middleEast: []
-  }
+    global: [],
+    asia: [],
+    europe: [],
+    northAmerica: [],
+    centralAmerica: [],
+    southAmerica: [],
+    africa: [],
+    oceania: [],
+    middleEast: [],
+  };
 
   componentDidMount() {
-    db.collection('all_continents').get().then( snapshot => {
+    db.collection("all_continents")
+      .get()
+      .then((snapshot) => {
+        var GLOBAL2 = [];
+        var ASIA2 = [];
+        var EUROPE2 = [];
+        var NORTH_AMERICA2 = [];
+        var CENTRAL_AMERICA2 = [];
+        var SOUTH_AMERICA2 = [];
+        var AFRICA2 = [];
+        var OCEANIA2 = [];
+        var MIDDLE_EAST2 = [];
 
-      var GLOBAL2 = []
-      var ASIA2 = []
-      var EUROPE2 = []
-      var NORTH_AMERICA2 = []
-      var CENTRAL_AMERICA2 = []
-      var SOUTH_AMERICA2 = []
-      var AFRICA2 = []
-      var OCEANIA2 = []
-      var MIDDLE_EAST2 = []
+        snapshot.forEach((doc) => {
+          const data = doc.data();
+          switch (data.group) {
+            case "Global":
+              GLOBAL2 = data.links;
+              break;
+            case "Asia":
+              ASIA2 = data.links;
+              break;
+            case "Europe":
+              EUROPE2 = data.links;
+              break;
+            case "North_America":
+              NORTH_AMERICA2 = data.links;
+              break;
+            case "South_America":
+              SOUTH_AMERICA2 = data.links;
+              break;
+            case "Central_America":
+              CENTRAL_AMERICA2 = data.links;
+              break;
+            case "Africa":
+              AFRICA2 = data.links;
+              break;
+            case "Oceania":
+              OCEANIA2 = data.links;
+              break;
+            default:
+              // Middle_East
+              MIDDLE_EAST2 = data.links;
+          }
+          console.log(data);
+        });
 
-      snapshot.forEach( doc => {
-        const data = doc.data()
-        switch (data.group) {
-          case "Global":
-            GLOBAL2 = alphabetSort(data.links)
-            break
-          case "Asia":
-            ASIA2 = alphabetSort(data.links)
-            break
-          case "Europe":
-            EUROPE2 = alphabetSort(data.links)
-            break
-          case "North_America":
-            NORTH_AMERICA2 = alphabetSort(data.links)
-            break
-          case "South_America":
-            SOUTH_AMERICA2 = alphabetSort(data.links)
-            break
-          case "Central_America":
-            CENTRAL_AMERICA2 = alphabetSort(data.links)
-            break
-          case "Africa":
-            AFRICA2 = alphabetSort(data.links)
-            break
-          case "Oceania":
-            OCEANIA2 = alphabetSort(data.links)
-            break
-          default:
-            // Middle_East
-            MIDDLE_EAST2 = alphabetSort(data.links)
-        }
-        console.log(data)
+        this.setState({
+          global: GLOBAL2,
+          asia: ASIA2,
+          europe: EUROPE2,
+          northAmerica: NORTH_AMERICA2,
+          centralAmerica: CENTRAL_AMERICA2,
+          southAmerica: SOUTH_AMERICA2,
+          africa: AFRICA2,
+          oceania: OCEANIA2,
+          middleEast: MIDDLE_EAST2,
+        });
       })
-
-      this.setState({
-        global: GLOBAL2,
-        asia: ASIA2,
-        europe: EUROPE2,
-        northAmerica: NORTH_AMERICA2,
-        centralAmerica: CENTRAL_AMERICA2,
-        southAmerica: SOUTH_AMERICA2,
-        africa: AFRICA2,
-        oceania: OCEANIA2,
-        middleEast: MIDDLE_EAST2
-      })
-
-  }).catch( error => {console.log(error)})}
+      .catch((error) => {
+        console.log(error);
+      });
+  }
 
   render() {
     return (
       <div className="home">
         <title>Donate to Fight COVID-19</title>
+
+        <div id="mobile" class="mobile">
+          <div class="welcome">
+            <h2>Welcome!</h2>
+            <h2>Are you new here?</h2>
+          </div>
+          <p>
+            <span class="color">Links to donations sites</span> are sorted here
+            by region, and then country!
+          </p>
+          <p>
+            <div class="color">
+              Do you know an organization that’s fighting COVID-19?
+            </div>
+            <div>
+              Share the link we can donate to and we’ll add it to our website!
+            </div>
+          </p>
+          <p>
+            <div class="color">Help us improve our website!</div>
+            <div>
+              Send us any ideas or feedback so our team can look into it.
+            </div>
+          </p>
+          <br />
+          <a href="#" class="close">
+            Got it, thanks!
+          </a>
+          <br />
+        </div>
+        <a href="#" class="close-popup"></a>
+
+        <div className="tour">
+          <a href="#popup" class="btn">
+            Take a quick tour >
+          </a>
+
+          <div id="popup" class="popup">
+            <h2>Welcome!</h2>
+            <p>
+              Are you new here? Let me take you on a short tour of the site!
+            </p>
+            <br />
+            <a href="#first" class="next">
+              Let's Go
+            </a>
+            <br />
+            <br />
+            <a href="#" class="close">
+              Got it, thanks!
+            </a>
+          </div>
+          <a href="#" class="close-popup"></a>
+
+          <div id="first" class="step">
+            <div class="page">
+              <div class="line"></div>
+              <div class="line red"></div>
+              <div class="line red"></div>
+            </div>
+            <p>
+              Links to donations sites are sorted here by region, and then by
+              country!
+            </p>
+            <a href="#second" class="next">
+              Next
+            </a>
+            <br />
+            <br />
+            <a href="#" class="close">
+              Got it, thanks!
+            </a>
+          </div>
+          <a href="#" class="close-popup"></a>
+
+          <div id="second" class="step">
+            <div class="page">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line red"></div>
+            </div>
+            <p>
+              Do you know an organization that’s fighting COVID-19? Share the
+              link we can donate to and we’ll add it to our website!
+            </p>
+            <a href="#third" class="next">
+              Next
+            </a>
+            <br />
+            <br />
+            <a href="#" class="close">
+              Got it, thanks!
+            </a>
+          </div>
+          <a href="#" class="close-popup"></a>
+
+          <div id="third" class="step">
+            <div class="page">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <p>
+              Help us improve our website! Send us any ideas or feedback so our
+              team can look into it.
+            </p>
+            <a href="#" class="next">
+              That's it!
+            </a>
+            <br />
+            <br />
+          </div>
+          <a href="#" class="close-popup"></a>
+        </div>
+
         <div class="grid">
-          <Box name="Global" list_of_links={this.state.global} className="global" />
+          <Box
+            name="Global"
+            list_of_links={this.state.global}
+            className="global"
+          />
           <Box name="Asia" list_of_links={this.state.asia} className="asia" />
-          <Box name="Europe" list_of_links={this.state.europe} className="europe" />
-  
-          <NorthAmerica name="North America" list_of_links={this.state.northAmerica} className="northamerica" />
-          <Box name="Central America" list_of_links={this.state.centralAmerica} className="centralamerica" />
-          <Box name="South America" list_of_links={this.state.southAmerica} className="southamerica" />
-  
-          <Box name="Africa" list_of_links={this.state.africa} className="africa" />
-          <Box name="Oceania" list_of_links={this.state.oceania} className="oceania" />
-          <Box name="Middle East" list_of_links={this.state.middleEast} className="middleeast" />
+          <Box
+            name="Europe"
+            list_of_links={this.state.europe}
+            className="europe"
+          />
+
+          <NorthAmerica
+            name="North America"
+            list_of_links={this.state.northAmerica}
+            className="northamerica"
+          />
+          <Box
+            name="Central America"
+            list_of_links={this.state.centralAmerica}
+            className="centralamerica"
+          />
+          <Box
+            name="South America"
+            list_of_links={this.state.southAmerica}
+            className="southamerica"
+          />
+
+          <Box
+            name="Africa"
+            list_of_links={this.state.africa}
+            className="africa"
+          />
+          <Box
+            name="Oceania"
+            list_of_links={this.state.oceania}
+            className="oceania"
+          />
+          <Box
+            name="Middle East"
+            list_of_links={this.state.middleEast}
+            className="middleeast"
+          />
         </div>
       </div>
     );

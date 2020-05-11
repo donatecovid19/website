@@ -28,9 +28,10 @@ img {
   height: auto;
 }
 
-button {
+.nav button {
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
+  position: relative;
   font-size: 24px;
   font-weight: 500;
   color: #f2994a;
@@ -41,13 +42,29 @@ button {
   margin-right: 10px;
 }
 
-button a {
+.nav button a {
   color: #f2994a;
   text-decoration: none;
   margin-left: 0px;
 }
 
-button:hover {
+.nav #mobile-btn {
+  display: none;
+}
+
+.nav .feedback {
+  z-index: 7;
+}
+
+.nav .share {
+  z-index: 5;
+}
+
+.nav .homepage {
+  z-index: 3;
+}
+
+.nav button:hover {
   box-shadow: 6px 6px 0px #f2994a;
   transition: 0.4s;
 }
@@ -115,6 +132,9 @@ footer {
   img {
     width: 450px;
   }
+  .nav #mobile-btn {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 740px) {
@@ -147,8 +167,11 @@ footer {
   .box {
     font-size: 18px;
   }
+  .nav #mobile-btn {
+    display: block;
+  }
 
-  button {
+  .nav button {
     font-size: 18px;
     padding: 5px 10px;
     display: block;
