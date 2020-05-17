@@ -3,6 +3,7 @@ import "./About.css";
 import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
+import { AiOutlineBehance } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineYoutube } from "react-icons/ai";
@@ -110,7 +111,7 @@ function About() {
             </div>
           </div>
           <div class="person li" id="person">
-            <img src="img/li.png" alt="" />
+            <img src="img/li.jpg" alt="" />
             <h2 class="name"> Katie Li </h2>
             <h4 class="role"> Design, Project Manager</h4>
             <div class="socials">
@@ -198,9 +199,11 @@ function About() {
               >
                 <AiOutlineYoutube size="2.2em" />
               </a>
-              <a href="https://jackhe.codes/"
-                 target="_blank"
-                 rel="noreferrer noopener">
+              <a
+                href="https://jackhe.codes/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <GoBrowser size="2em" />
               </a>
               <a
@@ -279,6 +282,55 @@ function About() {
                 rel="noreferrer noopener"
               >
                 <AiOutlineGithub size="2.1em" />
+              </a>
+            </div>
+          </div>
+          <div class="person delavega" id="person">
+            <img src="img/delavega.png" alt="" />
+            <h2 class="name"> Audrey Dela Vega </h2>
+            <h4 class="role"> Design </h4>
+            <div class="socials">
+              <a
+                href="https://instagram.com/_golddrey"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FaInstagram size="2em" />
+              </a>
+              <a
+                href="https://twitter.com/_golddrey"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FiTwitter size="2em" />
+              </a>
+              <a
+                href="https://www.behance.net/audrey_dv"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <AiOutlineBehance size="2.1em" />
+              </a>
+            </div>
+          </div>
+          <div class="person viernes" id="person">
+            <img src="img/viernes.jpg" alt="" />
+            <h2 class="name"> MJ Viernes </h2>
+            <h4 class="role"> Design </h4>
+            <div class="socials">
+              <a
+                href="https://instagram.com/mjadviernes"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FaInstagram size="2em" />
+              </a>
+              <a
+                href="https://twitter.com/mjadviernes"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <FiTwitter size="2em" />
               </a>
             </div>
           </div>
