@@ -3,6 +3,7 @@ import "./Home.css";
 import { Event } from "../tracking";
 import db from '../../backend/firebase.js'
 import alphabetSort from '../AlphabetSort'
+import Loader from '../cool-stuff/Loader'
 // import { render } from "@testing-library/react"; // why is this imported?
 
 // TODO: update the database with the information in the dummy constants :::
@@ -29,12 +30,20 @@ const Link = (props) => {
 
 const Box = (props) => {
   // props: String name, List<Link> list_of_links, String className
+  
   return (
     <div className={`box ${props.className}`} id="box">
-      <h1> {props.name} </h1>
-      {props.list_of_links.map((link) => {
-        return <Link url={link.url} name={link.name} />;
-      })}
+      { props.isLoading ?
+        <Loader /> 
+          :
+        <React.Fragment>
+          <h1> {props.name} </h1>
+          {props.list_of_links.map((link) => {
+            return <Link url={link.url} name={link.name} />;
+          })}
+        </React.Fragment>
+      }
+
     </div>
   );
 };
@@ -57,21 +66,29 @@ const NorthAmerica = (props) => {
 
   return (
     <div className={`box ${props.className}`} id="box">
-      <h1> {props.name} </h1>
-      <p>
-        {" "}
-        <strong> USA: </strong>
-      </p>
-      {allUsaLinks.map((link) => {
-        return <Link url={link.url} name={link.name} />;
-      })}
-      <p>
-        {" "}
-        <strong> Canada: </strong>
-      </p>
-      {allCanadaLinks.map((link) => {
-        return <Link url={link.url} name={link.name} />;
-      })}
+    {
+      props.isLoading ?
+      <Loader />
+      :
+      <React.Fragment>
+        <h1> {props.name} </h1>
+        <p>
+          {" "}
+          <strong> USA: </strong>
+        </p>
+        {allUsaLinks.map((link) => {
+          return <Link url={link.url} name={link.name} />;
+        })}
+        <p>
+          {" "}
+          <strong> Canada: </strong>
+        </p>
+        {allCanadaLinks.map((link) => {
+          return <Link url={link.url} name={link.name} />;
+        })}
+      </React.Fragment>
+    }
+
     </div>
   );
 };
@@ -87,7 +104,8 @@ class Home extends React.Component {
       southAmerica: [],
       africa: [],
       oceania: [],
-      middleEast: []
+      middleEast: [],
+      isLoading: true
   }
 
   componentDidMount() {
@@ -134,9 +152,7 @@ class Home extends React.Component {
             // Middle_East
             MIDDLE_EAST2 = alphabetSort(data.links)
         }
-        console.log(data)
       })
-
       this.setState({
         global: GLOBAL2,
         asia: ASIA2,
@@ -146,9 +162,9 @@ class Home extends React.Component {
         southAmerica: SOUTH_AMERICA2,
         africa: AFRICA2,
         oceania: OCEANIA2,
-        middleEast: MIDDLE_EAST2
+        middleEast: MIDDLE_EAST2,
+        isLoading: false
       })
-
   }).catch( error => {console.log(error)})}
 
   render() {
@@ -156,17 +172,17 @@ class Home extends React.Component {
       <div className="home">
         <title>Donate to Fight COVID-19</title>
         <div class="grid">
-          <Box name="Global" list_of_links={this.state.global} className="global" />
-          <Box name="Asia" list_of_links={this.state.asia} className="asia" />
-          <Box name="Europe" list_of_links={this.state.europe} className="europe" />
+          <Box name="Global" list_of_links={this.state.global} className="global" isLoading = {this.state.isLoading}/>
+          <Box name="Asia" list_of_links={this.state.asia} className="asia" isLoading = {this.state.isLoading}/>
+          <Box name="Europe" list_of_links={this.state.europe} className="europe" isLoading = {this.state.isLoading}/>
   
-          <NorthAmerica name="North America" list_of_links={this.state.northAmerica} className="northamerica" />
-          <Box name="Central America" list_of_links={this.state.centralAmerica} className="centralamerica" />
-          <Box name="South America" list_of_links={this.state.southAmerica} className="southamerica" />
+          <NorthAmerica name="North America" list_of_links={this.state.northAmerica} className="northamerica" isLoading = {this.state.isLoading}/>
+          <Box name="Central America" list_of_links={this.state.centralAmerica} className="centralamerica" isLoading = {this.state.isLoading}/>
+          <Box name="South America" list_of_links={this.state.southAmerica} className="southamerica" isLoading = {this.state.isLoading}/>
   
-          <Box name="Africa" list_of_links={this.state.africa} className="africa" />
-          <Box name="Oceania" list_of_links={this.state.oceania} className="oceania" />
-          <Box name="Middle East" list_of_links={this.state.middleEast} className="middleeast" />
+          <Box name="Africa" list_of_links={this.state.africa} className="africa" isLoading = {this.state.isLoading}/>
+          <Box name="Oceania" list_of_links={this.state.oceania} className="oceania" isLoading = {this.state.isLoading}/>
+          <Box name="Middle East" list_of_links={this.state.middleEast} className="middleeast" isLoading = {this.state.isLoading}/>
         </div>
       </div>
     );
