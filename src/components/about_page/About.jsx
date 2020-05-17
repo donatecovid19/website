@@ -288,7 +288,7 @@ function About() {
           <div class="person delavega" id="person">
             <img src="img/delavega.png" alt="" />
             <h2 class="name"> Audrey Dela Vega </h2>
-            <h4 class="role"> Designer </h4>
+            <h4 class="role"> Design </h4>
             <div class="socials">
               <a
                 href="https://instagram.com/_golddrey"
@@ -316,7 +316,7 @@ function About() {
           <div class="person viernes" id="person">
             <img src="img/viernes.jpg" alt="" />
             <h2 class="name"> MJ Viernes </h2>
-            <h4 class="role"> Designer </h4>
+            <h4 class="role"> Design </h4>
             <div class="socials">
               <a
                 href="https://instagram.com/mjadviernes"
