@@ -111,7 +111,7 @@ function About() {
             </div>
           </div>
           <div class="person li" id="person">
-            <img src="img/li.png" alt="" />
+            <img src="img/li.jpg" alt="" />
             <h2 class="name"> Katie Li </h2>
             <h4 class="role"> Design, Project Manager</h4>
             <div class="socials">
