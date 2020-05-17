@@ -2,9 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  max-width: 1520px;
+  margin: auto;
+}
+
 .grid {
   display: grid;
   margin: auto;
+  position: relative;
   max-width: 1520px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: repeat(3, 1fr);
@@ -12,6 +22,7 @@
     "global asia europe"
     "namerica camerica samerica"
     "africa oceania meast";
+  z-index: 3;
 }
 
 .box {
@@ -127,9 +138,253 @@
   box-shadow: 10px 10px 0px #4598b3;
 }
 
+/* popups */
+
+/* general popup stylings */
+
+.tour .btn {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  display: inline-block;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f2994a;
+  border: 2px solid #f2994a;
+  border-radius: 20px;
+  padding: 15px 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  z-index: 8;
+}
+
+.popup {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  display: inline-block;
+  background-color: #f2994a;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: white;
+  border: 2px solid #f2994a;
+  border-radius: 20px;
+  padding: 10px 30px 10px 20px;
+  text-decoration: none;
+  visibility: hidden;
+  width: 400px;
+  z-index: 9;
+}
+
+.step {
+  position: absolute;
+  display: block;
+  background-color: #f2994a;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 30px 10px 20px;
+  text-decoration: none;
+  visibility: hidden;
+  width: 348px;
+}
+
+.step p {
+  padding-bottom: 10px;
+}
+
+.popup:target,
+.step:target {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.step::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -20px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #f2994a transparent transparent transparent;
+}
+
+.line {
+  border-radius: 2.5px;
+  height: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  background: #ffffff;
+  width: 94px;
+}
+
+.red {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.page {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* positions of each popup */
+
+#first {
+  top: -500px;
+  margin-left: 16px;
+  z-index: 3;
+}
+
+#second {
+  top: -625px;
+  left: 48%;
+  margin-left: -174px;
+  z-index: 5;
+}
+
+#third {
+  top: -603px;
+  left: 62%;
+  margin-left: -174px;
+  z-index: 7;
+}
+
+/* button styles for each popup */
+
+.popup .close,
+.step .close,
+.mobile .close {
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  bottom: 15px;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.mobile .close {
+  color: #f2994a;
+}
+
+.mobile {
+  display: none;
+}
+
+.next {
+  color: #f2994a;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+/* white overlay */
+
+.close-popup {
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: default;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  transition: display 0.5s, z-index 0.5;
+  z-index: 1;
+}
+
+#first:target + .close-popup {
+  display: block;
+  z-index: 2;
+  transition-delay: 0s;
+}
+
+#second:target + .close-popup {
+  display: block;
+  z-index: 4;
+  transition-delay: 0s;
+}
+
+#third:target + .close-popup {
+  display: block;
+  z-index: 6;
+  transition-delay: 0s;
+}
+
+.popup:target + .close-popup {
+  display: block;
+  z-index: 8;
+  transition-delay: 0s;
+}
+
+/* popup animations */
+
+#first:target {
+  animation: drop 0.8s ease forwards;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(710px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(690px);
+    opacity: 1;
+  }
+}
+
+#second:target,
+#third:target {
+  animation: throw 0.8s ease forwards;
+}
+
+@keyframes throw {
+  1% {
+    opacity: 0;
+    transform: translateY(740px);
+  }
+  60% {
+    transform: translateY(670px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(690px);
+    opacity: 1;
+  }
+}
+
 /* mobile styling */
 
 @media (max-width: 1600px) {
+  .home {
+    max-width: 1120px;
+  }
+
+  #third {
+    left: 66%;
+  }
+
   .grid {
     max-width: 1120px;
     grid-template-columns: repeat(2, 1fr);
@@ -143,6 +398,10 @@
 }
 
 @media (max-width: 1200px) {
+  .home {
+    max-width: 720px;
+  }
+
   .grid {
     max-width: 720px;
     grid-template-columns: 1fr;
@@ -158,8 +417,95 @@
       "meast";
   }
 
+  .popup {
+    display: none;
+  }
+
+  .tour .btn {
+    display: none;
+  }
+
+  .mobile {
+    position: fixed;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #f2994a;
+    border: 2px solid #f2994a;
+    border-radius: 35px;
+    padding: 30px;
+    text-decoration: none;
+    width: 580px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
+    z-index: 11;
+  }
+
+  .mobile .close {
+    font-size: 28px;
+    bottom: 25px;
+  }
+
+  .welcome {
+    margin-bottom: 64px;
+  }
+
+  .color {
+    color: #e73a5e;
+  }
+
+  .mobile h2 {
+    line-height: 12px;
+  }
+
+  .mobile:target {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+
+  .mobile:target + .close-popup {
+    display: block;
+    z-index: 10;
+    transition-delay: 0s;
+  }
+
+  .step {
+    display: none;
+  }
+
   img {
     width: 450px;
+  }
+}
+
+@media (max-width: 620px) {
+  .mobile {
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 30px;
+    padding: 25px;
+    width: 300px;
+  }
+
+  .mobile .close {
+    font-size: 20px;
+    bottom: 10px;
+  }
+
+  .welcome {
+    margin-bottom: 40px;
+  }
+
+  .mobile h2 {
+    font-size: 24px;
+    line-height: 12px;
   }
 }
 
@@ -170,10 +516,5 @@
 
   .box {
     font-size: 18px;
-  }
-
-  button {
-    font-size: 18px;
-    padding: 5px 10px;
   }
 }

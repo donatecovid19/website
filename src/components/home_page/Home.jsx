@@ -150,11 +150,126 @@ class Home extends React.Component {
       })
 
   }).catch( error => {console.log(error)})}
-
+              
   render() {
     return (
       <div className="home">
         <title>Donate to Fight COVID-19</title>
+
+        <div id="mobile" class="mobile">
+          <div class="welcome">
+            <h2>Welcome!</h2>
+            <h2>Are you new here?</h2>
+          </div>
+          <p>
+            <span class="color">Links to donations sites</span> are sorted here
+            by region, and then country!
+          </p>
+          <p>
+            <div class="color">
+              Do you know an organization that’s fighting COVID-19?
+            </div>
+            <div>
+              Share the link we can donate to and we’ll add it to our website!
+            </div>
+          </p>
+          <p>
+            <div class="color">Help us improve our website!</div>
+            <div>
+              Send us any ideas or feedback so our team can look into it.
+            </div>
+          </p>
+          <br />
+          <a href="#" class="close">
+            Got it, thanks!
+          </a>
+          <br />
+        </div>
+        <a href="#" class="close-popup"></a>
+
+        <div className="tour">
+          <a href="#popup" class="btn">
+            Take a quick tour >
+          </a>
+
+          <div id="popup" class="popup">
+            <h2>Welcome!</h2>
+            <p>
+              Are you new here? Let me take you on a short tour of the site!
+            </p>
+            <br />
+            <a href="#first" class="next">
+              Let's Go
+            </a>
+            <br />
+            <br />
+            <a href="#" class="close">
+              Got it, thanks!
+            </a>
+          </div>
+          <a href="#" class="close-popup"></a>
+
+          <div id="first" class="step">
+            <div class="page">
+              <div class="line"></div>
+              <div class="line red"></div>
+              <div class="line red"></div>
+            </div>
+            <p>
+              Links to donations sites are sorted here by region, and then by
+              country!
+            </p>
+            <a href="#second" class="next">
+              Next
+            </a>
+            <br />
+            <br />
+            <a href="#" class="close">
+              Got it, thanks!
+            </a>
+          </div>
+          <a href="#" class="close-popup"></a>
+
+          <div id="second" class="step">
+            <div class="page">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line red"></div>
+            </div>
+            <p>
+              Do you know an organization that’s fighting COVID-19? Share the
+              link we can donate to and we’ll add it to our website!
+            </p>
+            <a href="#third" class="next">
+              Next
+            </a>
+            <br />
+            <br />
+            <a href="#" class="close">
+              Got it, thanks!
+            </a>
+          </div>
+          <a href="#" class="close-popup"></a>
+
+          <div id="third" class="step">
+            <div class="page">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <p>
+              Help us improve our website! Send us any ideas or feedback so our
+              team can look into it.
+            </p>
+            <a href="#" class="next">
+              That's it!
+            </a>
+            <br />
+            <br />
+          </div>
+          <a href="#" class="close-popup"></a>
+        </div>
+
         <div class="grid">
           <Box name="Global" list_of_links={this.state.global} className="global" />
           <Box name="Asia" list_of_links={this.state.asia} className="asia" />
