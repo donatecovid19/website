@@ -427,6 +427,16 @@ html {
 
   .nav #mobile-btn {
     display: inline-block;
+    width: 59px;
+    border-radius: 50%;
+  }
+
+  .nav #share-mobile {
+    display: inline-block;
+  }
+
+  .nav .share {
+    display: none;
   }
 
   .mobile {
@@ -513,6 +523,12 @@ html {
   }
 }
 
+@media (max-width: 510px) {
+  .nav #mobile-btn {
+    width: 41px;
+  }
+}
+
 @media (max-width: 480px) {
   img {
     width: 300px;
@@ -520,5 +536,11 @@ html {
 
   .box {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav #mobile-btn {
+    width: 39px;
   }
 }
