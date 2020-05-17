@@ -425,6 +425,10 @@ html {
     display: none;
   }
 
+  .nav #mobile-btn {
+    display: inline-block;
+  }
+
   .mobile {
     position: fixed;
     display: block;

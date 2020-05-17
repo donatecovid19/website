@@ -132,9 +132,6 @@ footer {
   img {
     width: 450px;
   }
-  .nav #mobile-btn {
-    display: inline-block;
-  }
 }
 
 @media (max-width: 740px) {
@@ -166,9 +163,6 @@ footer {
 
   .box {
     font-size: 18px;
-  }
-  .nav #mobile-btn {
-    display: block;
   }
 
   .nav button {
