@@ -52,6 +52,10 @@ img {
   display: none;
 }
 
+.nav #share-mobile {
+  display: none;
+}
+
 .nav .feedback {
   z-index: 7;
 }
@@ -140,6 +144,14 @@ footer {
   }
 }
 
+@media (max-width: 510px) {
+  .nav button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+}
+
 @media (max-width: 480px) {
   img {
     width: 300px;
@@ -164,11 +176,11 @@ footer {
   .box {
     font-size: 18px;
   }
+}
 
+@media (max-width: 360px) {
   .nav button {
-    font-size: 18px;
-    padding: 5px 10px;
-    display: block;
-    margin: 10px auto;
+    font-size: 16px;
+    margin: 3px;
   }
 }
