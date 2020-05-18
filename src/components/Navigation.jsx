@@ -13,33 +13,21 @@ function Navigation(props) {
           <button class="homepage">
             <Link className="nav-link" to="/">
               home{" "}
-              {/* <span role="img" aria-label="house">
-                &#127968;
-              </span> */}
             </Link>
           </button>
           <button class="share">
-            <Link className="nav-link" to="/ideas">
+            <Link className="nav-link" to="/form">
               submit a donation link{" "}
-              {/* <span role="img" aria-label="light">
-                &#128161;
-              </span> */}
             </Link>
           </button>
           <button id="share-mobile">
-            <Link className="nav-link" to="/ideas">
+            <Link className="nav-link" to="/form">
               submit{" "}
-              {/* <span role="img" aria-label="light">
-                &#128161;
-              </span> */}
             </Link>
           </button>
           <button class="feedback">
-            <Link className="nav-link" to="/form">
+            <Link className="nav-link" to="/ideas">
               contact{" "}
-              {/* <span role="img" aria-label="globe">
-                &#127760;
-              </span> */}
             </Link>
           </button>
           <button id="mobile-btn">
