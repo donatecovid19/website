@@ -1,35 +1,36 @@
 import React from "react";
-import db from '../backend/firebase.js'
+import db from "../backend/firebase.js";
 import "./Form.css";
 
-const uuidv4 = require("uuid/v4")
-
-
+const uuidv4 = require("uuid/v4");
 
 function Home() {
-
-  const ideaRef = React.createRef()
-  const contactRef = React.createRef()
+  const ideaRef = React.createRef();
+  const contactRef = React.createRef();
 
   const onSubmitHandler = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     // access input fields: ...ref.current.value
     // post data to firebase firestore
 
-    const uniqueId = ideaRef.current.value + "_" + uuidv4()
-    db.collection("ideas").doc(uniqueId).set({
-      idea: ideaRef.current.value,
-      contact: contactRef.current.value
-    }).then(() => {
-      console.log("success")
-      alert("SUCCESS! Your suggestion is noted!")
-      window.location.reload()
-    }).catch((error) => {
-      alert(error)
-      window.location.reload()
-    })
-  }
-  
+    const uniqueId = ideaRef.current.value + "_" + uuidv4();
+    db.collection("ideas")
+      .doc(uniqueId)
+      .set({
+        idea: ideaRef.current.value,
+        contact: contactRef.current.value,
+      })
+      .then(() => {
+        console.log("success");
+        alert("SUCCESS! Your suggestion is noted!");
+        window.location.reload();
+      })
+      .catch((error) => {
+        alert(error);
+        window.location.reload();
+      });
+  };
+
   return (
     <div class="donation_form">
       <title>Donate to Fight COVID-19</title>
@@ -41,13 +42,12 @@ function Home() {
           <label id="ideas" for="ideas">
             What's up?
           </label>
-          <input
-            type="text"
-            name="idea"
-            class="field"
+          <textarea
+            name="ideas"
             placeholder="Enter any idea"
-            ref = {ideaRef}
-          />
+            rows="4"
+            ref={ideaRef}
+          ></textarea>
         </div>
 
         <div class="group">
@@ -63,7 +63,7 @@ function Home() {
             name="contact"
             class="field"
             placeholder="Enter a contact method"
-            ref = {contactRef}
+            ref={contactRef}
           />
         </div>
 
