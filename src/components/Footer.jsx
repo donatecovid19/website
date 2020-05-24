@@ -18,16 +18,6 @@ function Footer() {
         <Link className="nav-link" to="/about" onClick = {goToTop}>
           our team
         </Link>
-        <p>
-          Image Source:{" "}
-          <a
-            href="https://ls.graphics/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Whoosh
-          </a>
-        </p>
       </footer>
     </div>
   );
