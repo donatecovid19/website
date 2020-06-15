@@ -30,6 +30,11 @@ function Navigation(props) {
               contact{" "}
             </Link>
           </button>
+          <button class="resources">
+            <a class="nav-link" href="https://donatecovid.carrd.co/">
+              resources{" "}
+            </a>
+          </button>
           <button id="mobile-btn">
             <a className="nav-link" href="/#mobile">
               <strong>i</strong>{" "}
