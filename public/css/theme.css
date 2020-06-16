@@ -56,6 +56,10 @@ img {
   display: none;
 }
 
+.nav .resources {
+  z-index: 9;
+}
+
 .nav .feedback {
   z-index: 7;
 }
