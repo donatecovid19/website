@@ -201,12 +201,12 @@ class Home extends React.Component {
           have additional resources and ways to help fight COVID-19!
           <br />
           <br />
-          <a href="#" class="close">
+          <Link to="" class="close">
             Got it, thanks!
-          </a>
+          </Link>
           <br />
         </div>
-        <a href="#" class="close-popup"></a>
+        <Link to="" class="close-popup"></Link>
 
         <div className="tour">
           <a href="#popup" class="btn">
@@ -224,11 +224,11 @@ class Home extends React.Component {
             </a>
             <br />
             <br />
-            <a href="#" class="close">
+            <Link to="" class="close">
               Got it, thanks!
-            </a>
+            </Link>
           </div>
-          <a href="#" class="close-popup"></a>
+          <Link to="" class="close-popup"></Link>
 
           <div id="first" class="step">
             <div class="page">
@@ -246,11 +246,11 @@ class Home extends React.Component {
             </a>
             <br />
             <br />
-            <a href="#" class="close">
+            <Link to="" class="close">
               Got it, thanks!
-            </a>
+            </Link>
           </div>
-          <a href="#" class="close-popup"></a>
+          <Link to="" class="close-popup"></Link>
 
           <div id="second" class="step">
             <div class="page">
@@ -268,11 +268,11 @@ class Home extends React.Component {
             </a>
             <br />
             <br />
-            <a href="#" class="close">
+            <Link to="" class="close">
               Got it, thanks!
-            </a>
+            </Link>
           </div>
-          <a href="#" class="close-popup"></a>
+          <Link to="" class="close-popup"></Link>
 
           <div id="third" class="step">
             <div class="page">
@@ -290,11 +290,11 @@ class Home extends React.Component {
             </a>
             <br />
             <br />
-            <a href="#" class="close">
+            <Link to="" class="close">
               Got it, thanks!
-            </a>
+            </Link>
           </div>
-          <a href="#" class="close-popup"></a>
+          <Link to="" class="close-popup"></Link>
 
           <div id="fourth" class="step">
             <div class="page">
@@ -307,13 +307,13 @@ class Home extends React.Component {
               Stay updated with the latest information! Here are additional
               resources and ways to help fight COVID-19.
             </p>
-            <a href="#" class="next">
+            <Link to="" class="next">
               That's it!
-            </a>
+            </Link>
             <br />
             <br />
           </div>
-          <a href="#" class="close-popup"></a>
+          <Link to="" class="close-popup"></Link>
         </div>
 
         <div class="grid">
