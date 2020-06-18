@@ -156,7 +156,7 @@ html {
   padding: 15px 20px;
   transition: 0.3s;
   text-decoration: none;
-  z-index: 8;
+  z-index: 10;
 }
 
 .popup {
@@ -175,7 +175,7 @@ html {
   text-decoration: none;
   visibility: hidden;
   width: 400px;
-  z-index: 9;
+  z-index: 11;
 }
 
 .step {
@@ -221,7 +221,7 @@ html {
   margin-bottom: 10px;
   margin-top: 5px;
   background: #ffffff;
-  width: 94px;
+  width: 68px;
 }
 
 .red {
@@ -240,23 +240,30 @@ html {
 /* positions of each popup */
 
 #first {
-  top: -500px;
+  top: -480px;
   margin-left: 16px;
   z-index: 3;
 }
 
 #second {
-  top: -625px;
-  left: 48%;
+  top: -603px;
+  left: 44%;
   margin-left: -174px;
   z-index: 5;
 }
 
 #third {
-  top: -603px;
-  left: 62%;
+  top: -578px;
+  left: 56%;
   margin-left: -174px;
   z-index: 7;
+}
+
+#fourth {
+  top: -600px;
+  left: 65%;
+  margin-left: -174px;
+  z-index: 9;
 }
 
 /* button styles for each popup */
@@ -328,9 +335,15 @@ html {
   transition-delay: 0s;
 }
 
-.popup:target + .close-popup {
+#fourth:target + .close-popup {
   display: block;
   z-index: 8;
+  transition-delay: 0s;
+}
+
+.popup:target + .close-popup {
+  display: block;
+  z-index: 10;
   transition-delay: 0s;
 }
 
@@ -355,7 +368,8 @@ html {
 }
 
 #second:target,
-#third:target {
+#third:target,
+#fourth:target {
   animation: throw 0.8s ease forwards;
 }
 
@@ -381,8 +395,26 @@ html {
     max-width: 1120px;
   }
 
+  #first:target {
+    animation: throw 0.8s ease forwards;
+  }
+
+  #first {
+    top: -580px;
+    margin-left: 174px;
+    left: 5%;
+  }
+
+  #second {
+    left: 42%;
+  }
+
   #third {
-    left: 66%;
+    left: 58%;
+  }
+
+  #fourth {
+    left: 68%;
   }
 
   .grid {
@@ -394,6 +426,17 @@ html {
       "camerica samerica"
       "africa oceania"
       "meast meast";
+  }
+}
+
+@media (max-width: 1400px) {
+  #first {
+    top: -580px;
+    margin-left: 150px;
+    left: 0;
+  }
+  #fourth {
+    left: 72%;
   }
 }
 
@@ -501,7 +544,7 @@ html {
 
 @media (max-width: 620px) {
   .mobile {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     border-radius: 30px;
     padding: 25px;
@@ -509,7 +552,7 @@ html {
   }
 
   .mobile .close {
-    font-size: 20px;
+    font-size: 18px;
     bottom: 10px;
   }
 
@@ -518,7 +561,7 @@ html {
   }
 
   .mobile h2 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 12px;
   }
 }
@@ -536,6 +579,16 @@ html {
 
   .box {
     font-size: 18px;
+  }
+
+  .mobile {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .mobile .close {
+    font-size: 16px;
+    bottom: 10px;
   }
 }
 
